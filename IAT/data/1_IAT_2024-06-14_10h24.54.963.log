@@ -1,0 +1,167 @@
+24.1286 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+24.3026 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+27.4821 	INFO 	Loaded monitor calibration from ['2024_05_29 09:31']
+28.2257 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002BB7C61BC40>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002BB7C61BBE0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002BB7C61BA30>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002BB7E8AF760>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([800, 600]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.2267 	EXP 	window1: mouseVisible = True
+28.2267 	EXP 	window1: backgroundImage = ''
+28.2267 	EXP 	window1: backgroundFit = 'none'
+28.2272 	EXP 	window1: mouseVisible = True
+28.2275 	EXP 	window1: mouseVisible = True
+28.2344 	EXP 	window1: mouseVisible = True
+28.2348 	EXP 	window1: mouseVisible = True
+28.2383 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2390 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2399 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2408 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2416 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2421 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2427 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2437 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2443 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2451 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2459 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2461 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.2476 	DEBUG 	Upload of Texture Font fontname complete
+28.2487 	EXP 	window1: mouseVisible = True
+28.2488 	EXP 	window1: mouseVisible = True
+28.2492 	EXP 	window1: mouseVisible = True
+28.2495 	EXP 	window1: mouseVisible = True
+28.2525 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2536 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2546 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2555 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2563 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.2565 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.2571 	DEBUG 	Upload of Texture Font fontname complete
+28.2583 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+28.2583 	EXP 	window1: recordFrameIntervals = False
+28.4566 	EXP 	window1: recordFrameIntervals = True
+28.5443 	EXP 	Screen (0) actual frame rate measured at 154.69Hz
+28.5443 	EXP 	window1: recordFrameIntervals = False
+28.5444 	EXP 	window1: mouseVisible = True
+28.5446 	EXP 	window1: mouseVisible = True
+28.5447 	EXP 	window1: mouseVisible = True
+28.5451 	EXP 	window1: mouseVisible = True
+28.5454 	EXP 	window1: mouseVisible = True
+28.5480 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5490 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5501 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5511 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5521 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5528 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5538 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5547 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5555 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5563 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5571 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5584 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5595 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5604 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5614 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5624 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.5626 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.5632 	DEBUG 	Upload of Texture Font fontname complete
+28.5644 	EXP 	window1: mouseVisible = True
+28.5645 	EXP 	window1: mouseVisible = True
+28.5649 	EXP 	window1: mouseVisible = True
+28.5652 	EXP 	window1: mouseVisible = True
+28.7445 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+32.0795 	INFO 	keyboard.Keyboard is using iohub backend.
+32.0796 	INFO 	keyboard.Keyboard is using iohub backend.
+32.0796 	INFO 	keyboard.Keyboard is using iohub backend.
+32.0796 	INFO 	keyboard.Keyboard is using iohub backend.
+32.0796 	EXP 	IAT: status = STARTED
+32.0800 	EXP 	window1: mouseVisible = True
+32.0801 	EXP 	window1: mouseVisible = True
+32.0805 	EXP 	window1: mouseVisible = True
+32.0808 	EXP 	window1: mouseVisible = True
+32.0832 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0836 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0840 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0844 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0847 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0849 	DEBUG 	Uploading Texture Font fontname to graphics card
+32.0879 	DEBUG 	Upload of Texture Font fontname complete
+32.0894 	EXP 	window1: mouseVisible = True
+32.0895 	EXP 	window1: mouseVisible = True
+32.0899 	EXP 	window1: mouseVisible = True
+32.0902 	EXP 	window1: mouseVisible = True
+32.0932 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0941 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0950 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0957 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0963 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0968 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0976 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0983 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0989 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.0990 	DEBUG 	Uploading Texture Font fontname to graphics card
+32.0997 	DEBUG 	Upload of Texture Font fontname complete
+32.1006 	EXP 	window1: mouseVisible = True
+32.2882 	EXP 	Created text_norm = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_norm', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+32.2884 	EXP 	window1: mouseVisible = True
+32.2885 	EXP 	window1: mouseVisible = True
+32.2889 	EXP 	window1: mouseVisible = True
+32.2893 	EXP 	window1: mouseVisible = True
+32.2917 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2925 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2933 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2941 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2949 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2958 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2967 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2973 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2982 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.2984 	DEBUG 	Uploading Texture Font fontname to graphics card
+32.2990 	DEBUG 	Upload of Texture Font fontname complete
+32.3002 	EXP 	window1: mouseVisible = True
+32.3003 	EXP 	window1: mouseVisible = True
+32.3007 	EXP 	window1: mouseVisible = True
+32.3012 	EXP 	window1: mouseVisible = True
+32.3037 	EXP 	window1: mouseVisible = True
+32.3039 	EXP 	window1: mouseVisible = True
+32.3043 	EXP 	window1: mouseVisible = True
+32.3047 	EXP 	window1: mouseVisible = True
+32.3071 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3080 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3088 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3097 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3104 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3112 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3121 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3128 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+32.3130 	DEBUG 	Uploading Texture Font fontname to graphics card
+32.3137 	DEBUG 	Upload of Texture Font fontname complete
+32.3147 	EXP 	window1: mouseVisible = True
+32.3148 	EXP 	window1: mouseVisible = True
+32.3152 	EXP 	window1: mouseVisible = True
+32.3155 	EXP 	window1: mouseVisible = True
+0.0281 	EXP 	textbox: autoLog = True
+0.0281 	EXP 	text_norm: alignText = 'left'
+0.0281 	EXP 	introduction: autoLog = True
+0.0281 	EXP 	textbox_2: autoLog = True
+0.0446 	INFO 	Keyboard events cleared
+0.0443 	EXP 	textbox: autoDraw = True
+10.5324 	DATA 	Mouse: Left button down, pos=(239,223)
+10.7628 	DATA 	Mouse:  Left button up, pos=(247,221)
+11.6766 	DATA 	Keypress: space
+11.6831 	INFO 	Keyboard events cleared
+11.6829 	EXP 	textbox: autoDraw = False
+11.6829 	EXP 	text_norm: autoDraw = True
+11.6829 	EXP 	text_norm: height = 0.1
+11.6829 	EXP 	text_norm: height = 0.1
+11.6829 	EXP 	text_norm: height = 0.1
+11.6829 	EXP 	text_norm: text = 'Any text\n\nincluding line breaks\n\nThis text component is white, so change the colour if you have a white background. It does not save the onset and offset time, but has been left justified with a wrap width of 1.8 norm units.\n\nPress the spacebar to continue'
+13.9643 	DATA 	Keypress: space
+13.9754 	INFO 	Keyboard events cleared
+13.9751 	EXP 	text_norm: autoDraw = False
+13.9751 	EXP 	introduction: autoDraw = True
+18.9624 	EXP 	textbox_2: autoDraw = True
+19.7867 	DATA 	Keypress: space
+19.8063 	EXP 	introduction: autoDraw = False
+19.8063 	EXP 	textbox_2: autoDraw = False
+19.8076 	EXP 	IAT: status = STOPPED
+19.8107 	INFO 	saved data to 'D:\\GitHub_programe\\GitHub\\Psychopy\\IAT\\data/1_IAT_2024-06-14_10h24.54.963.csv'
+19.8111 	INFO 	saved data to D:\GitHub_programe\GitHub\Psychopy\IAT\data/1_IAT_2024-06-14_10h24.54.963.psydat
+19.8832 	EXP 	window1: mouseVisible = True
+20.2513 	DEBUG 	Saving data for IAT ExperimentHandler

@@ -1,0 +1,9 @@
+4.9751 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+4.9859 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+5.0742 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+5.0863 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+13.4364 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.4867 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
