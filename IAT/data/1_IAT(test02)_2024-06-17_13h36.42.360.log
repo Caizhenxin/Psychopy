@@ -1,0 +1,361 @@
+4.6001 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+4.6009 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+4.6990 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+4.7001 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+7.4089 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.4097 	INFO 	Loaded monitor calibration from ['2024_05_29 09:31']
+7.7962 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A0D2000CD0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A0D2000C70>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A0D2000AC0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001A0D23F7850>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7963 	EXP 	window1: mouseVisible = True
+7.7964 	EXP 	window1: backgroundImage = ''
+7.7964 	EXP 	window1: backgroundFit = 'none'
+7.7965 	EXP 	window1: mouseVisible = True
+7.7967 	EXP 	window1: mouseVisible = True
+7.7992 	EXP 	window1: mouseVisible = True
+7.7997 	EXP 	window1: mouseVisible = True
+7.8037 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8055 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8064 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8073 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8079 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8085 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8095 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8102 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8111 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8122 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8134 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8145 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8158 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8168 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8175 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8180 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.8198 	DEBUG 	Upload of Texture Font fontname complete
+7.8210 	EXP 	window1: mouseVisible = True
+7.8211 	EXP 	window1: mouseVisible = True
+7.8218 	EXP 	window1: mouseVisible = True
+7.8221 	EXP 	window1: mouseVisible = True
+7.8249 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8260 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8270 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8280 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8282 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.8290 	DEBUG 	Upload of Texture Font fontname complete
+7.8304 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.8304 	EXP 	window1: recordFrameIntervals = False
+8.0559 	EXP 	window1: recordFrameIntervals = True
+8.1773 	EXP 	Screen (0) actual frame rate measured at 105.52Hz
+8.1773 	EXP 	window1: recordFrameIntervals = False
+8.1775 	EXP 	window1: mouseVisible = False
+8.1778 	EXP 	window1: mouseVisible = True
+8.1784 	EXP 	window1: mouseVisible = True
+8.1790 	EXP 	window1: mouseVisible = True
+8.1794 	EXP 	window1: mouseVisible = True
+8.1829 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1841 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1855 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1866 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1880 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1890 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1899 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1908 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1917 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1927 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1938 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1950 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1952 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.1961 	DEBUG 	Upload of Texture Font fontname complete
+8.1977 	EXP 	window1: mouseVisible = True
+8.1978 	EXP 	window1: mouseVisible = True
+8.1983 	EXP 	window1: mouseVisible = True
+8.1986 	EXP 	window1: mouseVisible = True
+8.2451 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+11.4367 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4367 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4367 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4367 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4368 	INFO 	keyboard.Keyboard is using iohub backend.
+11.4369 	EXP 	IAT(test02): status = STARTED
+11.4370 	EXP 	window1: mouseVisible = True
+11.4653 	EXP 	Created Instruction_01 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction01.png', interpolate=True, mask=None, maskParams=None, name='Instruction_01', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.4655 	EXP 	window1: mouseVisible = True
+11.4890 	EXP 	Created Instruction_02 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction02.png', interpolate=True, mask=None, maskParams=None, name='Instruction_02', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.4892 	EXP 	window1: mouseVisible = True
+11.5456 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+11.5459 	EXP 	window1: mouseVisible = True
+11.5476 	EXP 	Created iso_stim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=10.0, italic=False, languageStyle='LTR', name='iso_stim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.5477 	EXP 	window1: mouseVisible = True
+11.5487 	EXP 	Created fb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.5488 	EXP 	window1: mouseVisible = True
+11.5726 	EXP 	Created Instruction_03 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction03.png', interpolate=True, mask=None, maskParams=None, name='Instruction_03', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.5727 	EXP 	window1: mouseVisible = True
+11.6006 	EXP 	Created Instruction_04 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction04.png', interpolate=True, mask=None, maskParams=None, name='Instruction_04', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.6008 	EXP 	window1: mouseVisible = True
+11.6277 	EXP 	Created Instruction_05 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction05.png', interpolate=True, mask=None, maskParams=None, name='Instruction_05', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.6278 	EXP 	window1: mouseVisible = True
+11.6593 	EXP 	Created Instruction_06 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction06.png', interpolate=True, mask=None, maskParams=None, name='Instruction_06', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.6594 	EXP 	window1: mouseVisible = True
+11.6880 	EXP 	Created Instruction_07 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction07.png', interpolate=True, mask=None, maskParams=None, name='Instruction_07', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+11.6881 	EXP 	window1: mouseVisible = True
+11.7171 	EXP 	Created Instruction_08 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction08.png', interpolate=True, mask=None, maskParams=None, name='Instruction_08', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+0.0745 	INFO 	Keyboard events cleared
+0.0739 	EXP 	Instruction_01: autoDraw = True
+4.6647 	DATA 	Mouse: Left button down, pos=(523,258)
+4.8854 	DATA 	Mouse:  Left button up, pos=(523,258)
+5.1451 	DATA 	Keypress: space
+5.1547 	INFO 	Keyboard events cleared
+5.1543 	EXP 	Instruction_01: autoDraw = False
+5.1543 	EXP 	Instruction_02: autoDraw = True
+6.8457 	DEBUG 	Read excel file with openpyxl: Loop/Practice_iso.xlsx
+6.8460 	EXP 	Imported Loop/Practice_iso.xlsx as conditions, 10 conditions, 2 params
+6.8464 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+6.8466 	EXP 	New trial (rep=0, index=0): {'Words': '我', 'ans': 'e'}
+6.8492 	DATA 	Keypress: space
+6.8540 	EXP 	Instruction_02: autoDraw = False
+6.8540 	EXP 	fix: autoDraw = True
+10.4440 	EXP 	New trial (rep=0, index=1): {'Words': '我的', 'ans': 'e'}
+11.5058 	DATA 	Mouse: Left button down, pos=(477,268)
+11.5063 	DATA 	Mouse:  Left button up, pos=(477,268)
+11.5171 	INFO 	Keyboard events cleared
+11.5168 	EXP 	fix: autoDraw = False
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: text = '我'
+11.5168 	EXP 	iso_stim: autoDraw = False
+11.5168 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+11.5168 	EXP 	fb: height = 0.1
+11.5168 	EXP 	fb: height = 0.1
+11.5168 	EXP 	fb: height = 0.1
+11.5168 	EXP 	fb: text = 'Incorrect'
+11.5168 	EXP 	fb: autoDraw = False
+11.5168 	EXP 	fix: autoDraw = False
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: height = 10.0
+11.5168 	EXP 	iso_stim: text = '我的'
+11.5168 	EXP 	iso_stim: autoDraw = True
+11.8493 	EXP 	iso_stim: autoDraw = False
+11.8493 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+11.8493 	EXP 	fb: text = 'Incorrect'
+11.8493 	EXP 	fb: autoDraw = True
+12.8352 	EXP 	New trial (rep=0, index=2): {'Words': '俺', 'ans': 'e'}
+12.8383 	EXP 	fb: autoDraw = False
+12.8383 	EXP 	fb: autoDraw = False
+12.8383 	EXP 	fix: autoDraw = True
+14.2695 	DATA 	Keypress: lshift
+14.2745 	INFO 	Keyboard events cleared
+14.2740 	EXP 	fix: autoDraw = False
+14.2740 	EXP 	fix: autoDraw = False
+14.2740 	EXP 	iso_stim: height = 10.0
+14.2740 	EXP 	iso_stim: height = 10.0
+14.2740 	EXP 	iso_stim: height = 10.0
+14.2740 	EXP 	iso_stim: text = '俺'
+14.2740 	EXP 	iso_stim: autoDraw = True
+14.5058 	DATA 	Keypress: e
+14.5168 	EXP 	iso_stim: autoDraw = False
+14.5168 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+14.5168 	EXP 	fb: text = 'Incorrect'
+14.5168 	EXP 	fb: autoDraw = True
+15.5182 	EXP 	New trial (rep=0, index=3): {'Words': '我们', 'ans': 'e'}
+15.5223 	EXP 	fb: autoDraw = False
+15.5223 	EXP 	fix: autoDraw = True
+16.9459 	INFO 	Keyboard events cleared
+16.9455 	EXP 	fix: autoDraw = False
+16.9455 	EXP 	iso_stim: height = 10.0
+16.9455 	EXP 	iso_stim: height = 10.0
+16.9455 	EXP 	iso_stim: height = 10.0
+16.9455 	EXP 	iso_stim: text = '我们'
+16.9455 	EXP 	iso_stim: autoDraw = True
+17.5165 	EXP 	iso_stim: autoDraw = False
+17.5165 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+17.5165 	EXP 	fb: text = 'Incorrect'
+17.5165 	EXP 	fb: autoDraw = True
+17.8714 	DATA 	Keypress: i
+18.2835 	DATA 	Keypress: e
+18.5049 	EXP 	New trial (rep=0, index=4): {'Words': '其他', 'ans': 'i'}
+18.5089 	EXP 	fb: autoDraw = False
+18.5089 	EXP 	fix: autoDraw = True
+18.6076 	DATA 	Keypress: e
+18.8103 	DATA 	Keypress: e
+20.8093 	DATA 	Keypress: e
+20.8115 	DATA 	Keypress: e
+20.8117 	DATA 	Keypress: e
+20.8118 	DATA 	Keypress: e
+20.8119 	DATA 	Keypress: e
+20.8120 	DATA 	Keypress: e
+20.8121 	DATA 	Keypress: e
+20.8177 	EXP 	fix: autoDraw = False
+20.8177 	EXP 	fix: autoDraw = False
+20.8177 	EXP 	iso_stim: height = 10.0
+20.8177 	EXP 	iso_stim: height = 10.0
+20.8177 	EXP 	iso_stim: height = 10.0
+20.8177 	EXP 	iso_stim: text = '其他'
+20.8177 	EXP 	iso_stim: autoDraw = False
+20.8177 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+20.8177 	EXP 	fb: text = 'Incorrect'
+20.8177 	EXP 	fb: autoDraw = True
+21.0033 	DATA 	Keypress: e
+21.5072 	EXP 	New trial (rep=0, index=5): {'Words': '自己', 'ans': 'e'}
+21.5175 	EXP 	fb: autoDraw = False
+21.5175 	EXP 	fix: autoDraw = True
+23.7727 	DATA 	Keypress: i
+23.7729 	DATA 	Keypress: i
+23.7730 	DATA 	Keypress: i
+23.7794 	EXP 	fix: autoDraw = False
+23.7794 	EXP 	iso_stim: height = 10.0
+23.7794 	EXP 	iso_stim: height = 10.0
+23.7794 	EXP 	iso_stim: height = 10.0
+23.7794 	EXP 	iso_stim: text = '自己'
+23.7794 	EXP 	iso_stim: autoDraw = False
+23.7794 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+23.7794 	EXP 	fb: text = 'Incorrect'
+23.7794 	EXP 	fb: autoDraw = True
+23.9855 	DATA 	Keypress: e
+24.5130 	EXP 	New trial (rep=0, index=6): {'Words': '他们', 'ans': 'i'}
+24.5171 	EXP 	fb: autoDraw = False
+24.5171 	EXP 	fix: autoDraw = True
+24.7230 	DATA 	Keypress: e
+24.9086 	DATA 	Keypress: e
+25.0231 	INFO 	Keyboard events cleared
+25.0229 	EXP 	fix: autoDraw = False
+25.0229 	EXP 	iso_stim: height = 10.0
+25.0229 	EXP 	iso_stim: height = 10.0
+25.0229 	EXP 	iso_stim: height = 10.0
+25.0229 	EXP 	iso_stim: text = '他们'
+25.0229 	EXP 	iso_stim: autoDraw = True
+25.0680 	DATA 	Keypress: i
+25.0713 	EXP 	iso_stim: autoDraw = False
+25.0713 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+25.0713 	EXP 	fb: text = 'Incorrect'
+25.0713 	EXP 	fb: autoDraw = True
+25.2859 	DATA 	Keypress: e
+25.4593 	DATA 	Keypress: i
+25.5858 	DATA 	Keypress: e
+25.7117 	DATA 	Keypress: i
+25.8254 	DATA 	Keypress: e
+25.9348 	DATA 	Keypress: i
+26.0260 	DATA 	Keypress: e
+26.0594 	EXP 	New trial (rep=0, index=7): {'Words': '他的', 'ans': 'i'}
+26.0697 	EXP 	fb: autoDraw = False
+26.0697 	EXP 	fb: autoDraw = False
+26.0697 	EXP 	fix: autoDraw = True
+26.1521 	DATA 	Keypress: i
+26.2158 	DATA 	Keypress: e
+26.3389 	DATA 	Keypress: i
+26.3862 	DATA 	Keypress: e
+26.5014 	DATA 	Keypress: i
+26.5702 	INFO 	Keyboard events cleared
+26.5699 	EXP 	fix: autoDraw = False
+26.5699 	EXP 	fix: autoDraw = False
+26.5699 	EXP 	iso_stim: height = 10.0
+26.5699 	EXP 	iso_stim: height = 10.0
+26.5699 	EXP 	iso_stim: height = 10.0
+26.5699 	EXP 	iso_stim: text = '他的'
+26.5699 	EXP 	iso_stim: autoDraw = True
+26.5822 	EXP 	iso_stim: autoDraw = False
+26.5822 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+26.5822 	EXP 	fb: text = 'Incorrect'
+26.5822 	EXP 	fb: autoDraw = True
+26.6519 	DATA 	Keypress: i
+26.8030 	DATA 	Keypress: i
+26.9493 	DATA 	Keypress: i
+27.1038 	DATA 	Keypress: i
+27.2398 	DATA 	Keypress: i
+27.3915 	DATA 	Keypress: i
+27.5345 	DATA 	Keypress: i
+27.5671 	EXP 	New trial (rep=0, index=8): {'Words': '他人', 'ans': 'i'}
+27.5837 	EXP 	fb: autoDraw = False
+27.5837 	EXP 	fb: autoDraw = False
+27.5837 	EXP 	fix: autoDraw = True
+27.6742 	DATA 	Keypress: i
+27.8241 	DATA 	Keypress: i
+27.9734 	DATA 	Keypress: i
+29.0174 	DATA 	Keypress: i
+29.0178 	DATA 	Keypress: i
+29.0179 	DATA 	Keypress: i
+29.0181 	DATA 	Keypress: i
+29.0182 	DATA 	Keypress: i
+29.0183 	DATA 	Keypress: i
+29.0243 	INFO 	Keyboard events cleared
+29.0237 	EXP 	fix: autoDraw = False
+29.0237 	EXP 	fix: autoDraw = False
+29.0237 	EXP 	iso_stim: height = 10.0
+29.0237 	EXP 	iso_stim: height = 10.0
+29.0237 	EXP 	iso_stim: height = 10.0
+29.0237 	EXP 	iso_stim: text = '他人'
+29.0237 	EXP 	iso_stim: autoDraw = True
+29.0673 	DATA 	Keypress: i
+29.0729 	EXP 	iso_stim: autoDraw = False
+29.0729 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+29.0729 	EXP 	fb: text = 'Incorrect'
+29.0729 	EXP 	fb: autoDraw = True
+29.2335 	DATA 	Keypress: i
+29.3856 	DATA 	Keypress: i
+29.5496 	DATA 	Keypress: i
+29.7020 	DATA 	Keypress: i
+29.8599 	DATA 	Keypress: i
+30.0160 	DATA 	Keypress: i
+30.0665 	EXP 	New trial (rep=0, index=9): {'Words': '他', 'ans': 'i'}
+30.0709 	EXP 	fb: autoDraw = False
+30.0709 	EXP 	fb: autoDraw = False
+30.0709 	EXP 	fix: autoDraw = True
+30.1900 	DATA 	Keypress: i
+30.3402 	DATA 	Keypress: i
+30.5016 	DATA 	Keypress: i
+30.5653 	INFO 	Keyboard events cleared
+30.5651 	EXP 	fix: autoDraw = False
+30.5651 	EXP 	fix: autoDraw = False
+30.5651 	EXP 	iso_stim: height = 10.0
+30.5651 	EXP 	iso_stim: height = 10.0
+30.5651 	EXP 	iso_stim: height = 10.0
+30.5651 	EXP 	iso_stim: text = '他'
+30.5651 	EXP 	iso_stim: autoDraw = True
+30.6563 	DATA 	Keypress: i
+30.6654 	EXP 	iso_stim: autoDraw = False
+30.6654 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+30.6654 	EXP 	fb: text = 'Incorrect'
+30.6654 	EXP 	fb: autoDraw = True
+30.8229 	DATA 	Keypress: i
+30.9867 	DATA 	Keypress: i
+31.1438 	DATA 	Keypress: i
+31.3027 	DATA 	Keypress: i
+31.4542 	DATA 	Keypress: i
+31.6185 	DATA 	Keypress: i
+31.6650 	INFO 	Keyboard events cleared
+31.6646 	EXP 	fb: autoDraw = False
+31.6646 	EXP 	fb: autoDraw = False
+31.6646 	EXP 	Instruction_03: autoDraw = True
+31.7885 	DATA 	Keypress: i
+31.9546 	DATA 	Keypress: i
+32.7153 	DATA 	Keypress: space
+32.7260 	INFO 	Keyboard events cleared
+32.7256 	EXP 	Instruction_03: autoDraw = False
+32.7256 	EXP 	Instruction_04: autoDraw = True
+32.9875 	DATA 	Keypress: space
+32.9921 	INFO 	Keyboard events cleared
+32.9916 	EXP 	Instruction_04: autoDraw = False
+32.9916 	EXP 	Instruction_05: autoDraw = True
+33.2053 	DATA 	Keypress: space
+33.2131 	INFO 	Keyboard events cleared
+33.2128 	EXP 	Instruction_05: autoDraw = False
+33.2128 	EXP 	Instruction_06: autoDraw = True
+33.4050 	DATA 	Keypress: space
+33.4128 	INFO 	Keyboard events cleared
+33.4124 	EXP 	Instruction_06: autoDraw = False
+33.4124 	EXP 	Instruction_07: autoDraw = True
+33.5939 	DATA 	Keypress: space
+33.6027 	INFO 	Keyboard events cleared
+33.6024 	EXP 	Instruction_07: autoDraw = False
+33.6024 	EXP 	Instruction_08: autoDraw = True
+33.7873 	DATA 	Keypress: space
+33.7904 	EXP 	Instruction_08: autoDraw = False
+33.7922 	EXP 	IAT(test02): status = STOPPED
+33.7991 	INFO 	saved data to 'D:\\GitHub_programe\\GitHub\\Psychopy\\IAT\\data/1_IAT(test02)_2024-06-17_13h36.42.360.csv'
+33.7998 	INFO 	saved data to D:\GitHub_programe\GitHub\Psychopy\IAT\data/1_IAT(test02)_2024-06-17_13h36.42.360.psydat
+33.8528 	EXP 	window1: mouseVisible = True
+34.2540 	DEBUG 	Saving data for IAT(test02) ExperimentHandler
