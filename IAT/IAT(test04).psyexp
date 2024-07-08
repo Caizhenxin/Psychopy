@@ -44,7 +44,7 @@
     <Param val="False" valType="bool" updates="None" name="elSimMode"/>
     <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
     <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
-    <Param val="IAT(test02)" valType="str" updates="None" name="expName"/>
+    <Param val="IAT(test04)" valType="str" updates="None" name="expName"/>
     <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
     <Param val="None" valType="str" updates="None" name="eyetracker"/>
     <Param val="" valType="code" updates="None" name="frameRate"/>
@@ -789,7 +789,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="text_2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -801,7 +801,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$Words_ipn" valType="str" updates="constant" name="text"/>
+        <Param val="$Words_ipn" valType="str" updates="set every repeat" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
@@ -887,6 +887,129 @@
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
     </Routine>
+    <Routine name="Practice_t1">
+      <RoutineSettingsComponent name="Practice_t1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Practice_t1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_3" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$Words_t1" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_t1" plugin="None">
+        <Param val="'e','i'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$ans_t1" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_t1" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Feedback_t1">
+      <RoutineSettingsComponent name="Feedback_t1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Feedback_t1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="fb_code_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="fb_text = &quot;no key_resp component found - look at the Std out window for info&quot;;&amp;#10;fb_col = &quot;black&quot;;&amp;#10;try {&amp;#10;    if (key_resp_t1.corr) {&amp;#10;        fb_text = &quot;Correct!&quot;;&amp;#10;        fb_col = &quot;green&quot;;&amp;#10;    } else {&amp;#10;        fb_text = &quot;Incorrect&quot;;&amp;#10;        fb_col = &quot;red&quot;;&amp;#10;    }&amp;#10;} catch(e) {&amp;#10;    console.log(&quot;Make sure that you have:\n1. a routine with a keyboard component in it called \&quot;key_resp\&quot;\n 2. In the key_Resp component in the \&quot;data\&quot; tab select \&quot;Store Correct\&quot;.\n in the \&quot;Correct answer\&quot; field use \&quot;$corrAns\&quot; (where corrAns is a column header in your conditions file indicating the correct key press&quot;);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# Check if the key press was correct or not.&amp;#10;# This routine will need to follow another routine with a &amp;#10;# key response component in it called &quot;key_resp&quot; &amp;#10;# and the &quot;store correct&quot; option enabled. &amp;#10;# If your experiment is missing that you will &amp;#10;# not receive feedback and an error message will be displayed.&amp;#10;&amp;#10;# If a key response component has been added and feedback is functioning.&amp;#10;# 1. remove lines 12, 13, 15, 22 and 23.&amp;#10;# 2. dedent lines 16 to 21&amp;#10;&amp;#10;fb_text = 'no key_resp component found - look at the Std out window for info'&amp;#10;fb_col = 'black'&amp;#10;&amp;#10;try:&amp;#10;    if key_resp_t1.corr:&amp;#10;        fb_text = 'Correct!'&amp;#10;        fb_col = 'green'&amp;#10;    else:&amp;#10;        fb_text = 'Incorrect'&amp;#10;        fb_col = 'red'&amp;#10;except:&amp;#10;    print('Make sure that you have:\n1. a routine with a keyboard component in it called &quot;key_resp&quot;\n 2. In the key_Resp component in the &quot;data&quot; tab select &quot;Store Correct&quot;.\n in the &quot;Correct answer&quot; field use &quot;$corrAns&quot; (where corrAns is a column header in your conditions file indicating the correct key press')&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="fb_code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="fb_2" plugin="None">
+        <Param val="$fb_col" valType="color" updates="set every repeat" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fb_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$fb_text" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="Instruction01"/>
@@ -907,8 +1030,53 @@
     <Routine name="Feedback_iso_Practice"/>
     <LoopTerminator name="Practice_01"/>
     <Routine name="Instruction03"/>
+    <LoopInitiator loopType="TrialHandler" name="Practice_02">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Words_ipn': '优秀', 'ans_ipn': 'e'}, {'Words_ipn': '崇高', 'ans_ipn': 'e'}, {'Words_ipn': '出门', 'ans_ipn': 'e'}, {'Words_ipn': '杰出', 'ans_ipn': 'e'}, {'Words_ipn': '乐观', 'ans_ipn': 'e'}, {'Words_ipn': '诚实', 'ans_ipn': 'e'}, {'Words_ipn': '正直', 'ans_ipn': 'e'}, {'Words_ipn': '勇敢', 'ans_ipn': 'e'}, {'Words_ipn': '勤奋', 'ans_ipn': 'e'}, {'Words_ipn': '机智', 'ans_ipn': 'e'}, {'Words_ipn': '认真', 'ans_ipn': 'e'}, {'Words_ipn': '稳重', 'ans_ipn': 'e'}, {'Words_ipn': '无私', 'ans_ipn': 'e'}, {'Words_ipn': '公正', 'ans_ipn': 'e'}, {'Words_ipn': '朴实', 'ans_ipn': 'e'}, {'Words_ipn': '细腻', 'ans_ipn': 'e'}, {'Words_ipn': '冷静', 'ans_ipn': 'e'}, {'Words_ipn': '热情', 'ans_ipn': 'e'}, {'Words_ipn': '活泼', 'ans_ipn': 'e'}, {'Words_ipn': '诚恳', 'ans_ipn': 'e'}, {'Words_ipn': '卑鄙', 'ans_ipn': 'i'}, {'Words_ipn': '虚伪', 'ans_ipn': 'i'}, {'Words_ipn': '愚蠢', 'ans_ipn': 'i'}, {'Words_ipn': '刻薄', 'ans_ipn': 'i'}, {'Words_ipn': '悲观', 'ans_ipn': 'i'}, {'Words_ipn': '消极', 'ans_ipn': 'i'}, {'Words_ipn': '自卑', 'ans_ipn': 'i'}, {'Words_ipn': '傲慢', 'ans_ipn': 'i'}, {'Words_ipn': '鲁莽', 'ans_ipn': 'i'}, {'Words_ipn': '冒失', 'ans_ipn': 'i'}, {'Words_ipn': '执拗', 'ans_ipn': 'i'}, {'Words_ipn': '散漫', 'ans_ipn': 'i'}, {'Words_ipn': '凶狠', 'ans_ipn': 'i'}, {'Words_ipn': '自私', 'ans_ipn': 'i'}, {'Words_ipn': '暴躁', 'ans_ipn': 'i'}, {'Words_ipn': '猖狂', 'ans_ipn': 'i'}, {'Words_ipn': '野蛮', 'ans_ipn': 'i'}, {'Words_ipn': '固执', 'ans_ipn': 'i'}, {'Words_ipn': '轻率', 'ans_ipn': 'i'}, {'Words_ipn': '下贱', 'ans_ipn': 'i'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Loop/Practice_ipn.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="Practice_02" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Fix"/>
+    <Routine name="Practic_ipn"/>
+    <Routine name="Feedback_ipn_Practice"/>
+    <LoopTerminator name="Practice_02"/>
     <Routine name="Instruction04"/>
+    <LoopInitiator loopType="TrialHandler" name="Practice_T1">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Words_t1': '我', 'ans_t1': 'e'}, {'Words_t1': '我的', 'ans_t1': 'e'}, {'Words_t1': '我们', 'ans_t1': 'e'}, {'Words_t1': '自己', 'ans_t1': 'e'}, {'Words_t1': '俺', 'ans_t1': 'e'}, {'Words_t1': '他', 'ans_t1': 'i'}, {'Words_t1': '他们', 'ans_t1': 'i'}, {'Words_t1': '他的', 'ans_t1': 'i'}, {'Words_t1': '他人', 'ans_t1': 'i'}, {'Words_t1': '其他', 'ans_t1': 'i'}, {'Words_t1': '优秀', 'ans_t1': 'e'}, {'Words_t1': '崇高', 'ans_t1': 'e'}, {'Words_t1': '出门', 'ans_t1': 'e'}, {'Words_t1': '杰出', 'ans_t1': 'e'}, {'Words_t1': '乐观', 'ans_t1': 'e'}, {'Words_t1': '诚实', 'ans_t1': 'e'}, {'Words_t1': '正直', 'ans_t1': 'e'}, {'Words_t1': '勇敢', 'ans_t1': 'e'}, {'Words_t1': '勤奋', 'ans_t1': 'e'}, {'Words_t1': '机智', 'ans_t1': 'e'}, {'Words_t1': '认真', 'ans_t1': 'e'}, {'Words_t1': '稳重', 'ans_t1': 'e'}, {'Words_t1': '无私', 'ans_t1': 'e'}, {'Words_t1': '公正', 'ans_t1': 'e'}, {'Words_t1': '朴实', 'ans_t1': 'e'}, {'Words_t1': '细腻', 'ans_t1': 'e'}, {'Words_t1': '冷静', 'ans_t1': 'e'}, {'Words_t1': '热情', 'ans_t1': 'e'}, {'Words_t1': '活泼', 'ans_t1': 'e'}, {'Words_t1': '诚恳', 'ans_t1': 'e'}, {'Words_t1': '卑鄙', 'ans_t1': 'i'}, {'Words_t1': '虚伪', 'ans_t1': 'i'}, {'Words_t1': '愚蠢', 'ans_t1': 'i'}, {'Words_t1': '刻薄', 'ans_t1': 'i'}, {'Words_t1': '悲观', 'ans_t1': 'i'}, {'Words_t1': '消极', 'ans_t1': 'i'}, {'Words_t1': '自卑', 'ans_t1': 'i'}, {'Words_t1': '傲慢', 'ans_t1': 'i'}, {'Words_t1': '鲁莽', 'ans_t1': 'i'}, {'Words_t1': '冒失', 'ans_t1': 'i'}, {'Words_t1': '执拗', 'ans_t1': 'i'}, {'Words_t1': '散漫', 'ans_t1': 'i'}, {'Words_t1': '凶狠', 'ans_t1': 'i'}, {'Words_t1': '自私', 'ans_t1': 'i'}, {'Words_t1': '暴躁', 'ans_t1': 'i'}, {'Words_t1': '猖狂', 'ans_t1': 'i'}, {'Words_t1': '野蛮', 'ans_t1': 'i'}, {'Words_t1': '固执', 'ans_t1': 'i'}, {'Words_t1': '轻率', 'ans_t1': 'i'}, {'Words_t1': '下贱', 'ans_t1': 'i'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Loop/Practice_t1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="Practice_T1" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Fix"/>
+    <Routine name="Practice_t1"/>
+    <Routine name="Feedback_t1"/>
+    <LoopTerminator name="Practice_T1"/>
     <Routine name="Instruction05"/>
+    <LoopInitiator loopType="TrialHandler" name="Formal_T1">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'Words_t1': '我', 'ans_t1': 'e'}, {'Words_t1': '我的', 'ans_t1': 'e'}, {'Words_t1': '我们', 'ans_t1': 'e'}, {'Words_t1': '自己', 'ans_t1': 'e'}, {'Words_t1': '俺', 'ans_t1': 'e'}, {'Words_t1': '他', 'ans_t1': 'i'}, {'Words_t1': '他们', 'ans_t1': 'i'}, {'Words_t1': '他的', 'ans_t1': 'i'}, {'Words_t1': '他人', 'ans_t1': 'i'}, {'Words_t1': '其他', 'ans_t1': 'i'}, {'Words_t1': '优秀', 'ans_t1': 'e'}, {'Words_t1': '崇高', 'ans_t1': 'e'}, {'Words_t1': '聪明', 'ans_t1': 'e'}, {'Words_t1': '杰出', 'ans_t1': 'e'}, {'Words_t1': '乐观', 'ans_t1': 'e'}, {'Words_t1': '诚实', 'ans_t1': 'e'}, {'Words_t1': '正直', 'ans_t1': 'e'}, {'Words_t1': '勇敢', 'ans_t1': 'e'}, {'Words_t1': '勤奋', 'ans_t1': 'e'}, {'Words_t1': '机智', 'ans_t1': 'e'}, {'Words_t1': '认真', 'ans_t1': 'e'}, {'Words_t1': '稳重', 'ans_t1': 'e'}, {'Words_t1': '无私', 'ans_t1': 'e'}, {'Words_t1': '公正', 'ans_t1': 'e'}, {'Words_t1': '朴实', 'ans_t1': 'e'}, {'Words_t1': '细腻', 'ans_t1': 'e'}, {'Words_t1': '冷静', 'ans_t1': 'e'}, {'Words_t1': '热情', 'ans_t1': 'e'}, {'Words_t1': '活泼', 'ans_t1': 'e'}, {'Words_t1': '诚恳', 'ans_t1': 'e'}, {'Words_t1': '卑鄙', 'ans_t1': 'i'}, {'Words_t1': '虚伪', 'ans_t1': 'i'}, {'Words_t1': '愚蠢', 'ans_t1': 'i'}, {'Words_t1': '刻薄', 'ans_t1': 'i'}, {'Words_t1': '悲观', 'ans_t1': 'i'}, {'Words_t1': '消极', 'ans_t1': 'i'}, {'Words_t1': '自卑', 'ans_t1': 'i'}, {'Words_t1': '傲慢', 'ans_t1': 'i'}, {'Words_t1': '鲁莽', 'ans_t1': 'i'}, {'Words_t1': '冒失', 'ans_t1': 'i'}, {'Words_t1': '执拗', 'ans_t1': 'i'}, {'Words_t1': '散漫', 'ans_t1': 'i'}, {'Words_t1': '凶狠', 'ans_t1': 'i'}, {'Words_t1': '自私', 'ans_t1': 'i'}, {'Words_t1': '暴躁', 'ans_t1': 'i'}, {'Words_t1': '猖狂', 'ans_t1': 'i'}, {'Words_t1': '野蛮', 'ans_t1': 'i'}, {'Words_t1': '固执', 'ans_t1': 'i'}, {'Words_t1': '轻率', 'ans_t1': 'i'}, {'Words_t1': '下贱', 'ans_t1': 'i'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Loop/Practice_t1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="Formal_T1" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Fix"/>
+    <Routine name="Practice_t1"/>
+    <Routine name="Feedback_t1"/>
+    <LoopTerminator name="Formal_T1"/>
     <Routine name="Instruction06"/>
     <Routine name="Instruction07"/>
     <Routine name="Instruction08"/>

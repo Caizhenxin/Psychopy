@@ -1,0 +1,1486 @@
+43.4739 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+43.8262 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+44.1081 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+44.2236 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+65.3579 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+65.3585 	INFO 	Loaded monitor calibration from ['2024_05_29 09:31']
+67.2531 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000018D7AA47D00>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000018D7AA47CA0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000018D7AA47AF0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000018D7AEFD880>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+67.2532 	EXP 	window1: mouseVisible = True
+67.2532 	EXP 	window1: backgroundImage = ''
+67.2532 	EXP 	window1: backgroundFit = 'none'
+67.2534 	EXP 	window1: mouseVisible = True
+67.2538 	EXP 	window1: mouseVisible = True
+67.2665 	EXP 	window1: mouseVisible = True
+67.2692 	EXP 	window1: mouseVisible = True
+67.2769 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2786 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2803 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2822 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2841 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2853 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2867 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2894 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2915 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2935 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2956 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2977 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.2991 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3012 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3028 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3037 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3041 	DEBUG 	Uploading Texture Font fontname to graphics card
+67.3070 	DEBUG 	Upload of Texture Font fontname complete
+67.3109 	EXP 	window1: mouseVisible = True
+67.3118 	EXP 	window1: mouseVisible = True
+67.3137 	EXP 	window1: mouseVisible = True
+67.3149 	EXP 	window1: mouseVisible = True
+67.3198 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3218 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3233 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3249 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+67.3252 	DEBUG 	Uploading Texture Font fontname to graphics card
+67.3283 	DEBUG 	Upload of Texture Font fontname complete
+67.3307 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+67.3307 	EXP 	window1: recordFrameIntervals = False
+67.8236 	EXP 	window1: recordFrameIntervals = True
+67.8881 	WARNING 	t of last frame was 36.62ms (=1/27)
+67.9265 	WARNING 	t of last frame was 29.54ms (=1/33)
+67.9605 	WARNING 	t of last frame was 23.22ms (=1/43)
+67.9910 	WARNING 	t of last frame was 30.47ms (=1/32)
+68.0276 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+69.8692 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+69.8705 	EXP 	window1: mouseVisible = False
+69.8727 	EXP 	window1: mouseVisible = True
+69.8734 	EXP 	window1: mouseVisible = True
+69.8742 	EXP 	window1: mouseVisible = True
+69.8747 	EXP 	window1: mouseVisible = True
+69.8781 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8792 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8803 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8814 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8825 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8833 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8845 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8856 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8866 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8877 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8888 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8900 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+69.8903 	DEBUG 	Uploading Texture Font fontname to graphics card
+69.8911 	DEBUG 	Upload of Texture Font fontname complete
+69.8926 	EXP 	window1: mouseVisible = True
+69.8928 	EXP 	window1: mouseVisible = True
+69.8932 	EXP 	window1: mouseVisible = True
+69.8937 	EXP 	window1: mouseVisible = True
+70.1439 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+75.4739 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4739 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4740 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4740 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4740 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4740 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4741 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4741 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4741 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4741 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4741 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4742 	INFO 	keyboard.Keyboard is using iohub backend.
+75.4742 	EXP 	IAT(test03): status = STARTED
+75.4744 	EXP 	window1: mouseVisible = True
+75.5182 	EXP 	Created Instruction_01 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction01.png', interpolate=True, mask=None, maskParams=None, name='Instruction_01', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.5185 	EXP 	window1: mouseVisible = True
+75.5544 	EXP 	Created Instruction_02 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction02.png', interpolate=True, mask=None, maskParams=None, name='Instruction_02', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.5546 	EXP 	window1: mouseVisible = True
+75.8516 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+75.8530 	EXP 	window1: mouseVisible = True
+75.8547 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.8565 	EXP 	window1: mouseVisible = True
+75.8576 	EXP 	Created fb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.8580 	EXP 	window1: mouseVisible = True
+75.8879 	EXP 	Created Instruction_03 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction03.png', interpolate=True, mask=None, maskParams=None, name='Instruction_03', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.8880 	EXP 	window1: mouseVisible = True
+75.8909 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+75.8912 	EXP 	window1: mouseVisible = True
+75.8921 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.8922 	EXP 	window1: mouseVisible = True
+75.8933 	EXP 	Created fb_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.8934 	EXP 	window1: mouseVisible = True
+75.9212 	EXP 	Created Instruction_04 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction04.png', interpolate=True, mask=None, maskParams=None, name='Instruction_04', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.9214 	EXP 	window1: mouseVisible = True
+75.9244 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+75.9247 	EXP 	window1: mouseVisible = True
+75.9257 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.9258 	EXP 	window1: mouseVisible = True
+75.9266 	EXP 	Created fb_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+75.9267 	EXP 	window1: mouseVisible = True
+75.9545 	EXP 	Created Instruction_05 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction05.png', interpolate=True, mask=None, maskParams=None, name='Instruction_05', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.9547 	EXP 	window1: mouseVisible = True
+75.9823 	EXP 	Created Instruction_06 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction06.png', interpolate=True, mask=None, maskParams=None, name='Instruction_06', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+75.9825 	EXP 	window1: mouseVisible = True
+76.0111 	EXP 	Created Instruction_07 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction07.png', interpolate=True, mask=None, maskParams=None, name='Instruction_07', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+76.0112 	EXP 	window1: mouseVisible = True
+76.0444 	EXP 	Created Instruction_08 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction08.png', interpolate=True, mask=None, maskParams=None, name='Instruction_08', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+0.2340 	INFO 	Keyboard events cleared
+0.2336 	EXP 	Instruction_01: autoDraw = True
+13.7587 	DATA 	Keypress: space
+13.7926 	INFO 	Keyboard events cleared
+13.7921 	EXP 	Instruction_01: autoDraw = False
+13.7921 	EXP 	Instruction_02: autoDraw = True
+14.3200 	DEBUG 	Read excel file with openpyxl: Loop/Practice_iso.xlsx
+14.3203 	EXP 	Imported Loop/Practice_iso.xlsx as conditions, 10 conditions, 2 params
+14.3208 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+14.3209 	EXP 	New trial (rep=0, index=0): {'Words': '他人', 'ans': 'i'}
+14.3259 	DATA 	Keypress: space
+14.3368 	EXP 	Instruction_02: autoDraw = False
+14.3368 	EXP 	fix: autoDraw = True
+14.8295 	INFO 	Keyboard events cleared
+14.8291 	EXP 	fix: autoDraw = False
+14.8291 	EXP 	text: height = 0.1
+14.8291 	EXP 	text: height = 0.1
+14.8291 	EXP 	text: height = 0.1
+14.8291 	EXP 	text: text = '他人'
+14.8291 	EXP 	text: autoDraw = True
+15.7774 	EXP 	text: autoDraw = False
+15.7774 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+15.7774 	EXP 	fb: height = 0.1
+15.7774 	EXP 	fb: height = 0.1
+15.7774 	EXP 	fb: height = 0.1
+15.7774 	EXP 	fb: text = '错误'
+15.7774 	EXP 	fb: autoDraw = True
+16.4174 	DATA 	Keypress: lshift
+16.7412 	EXP 	New trial (rep=0, index=1): {'Words': '他的', 'ans': 'i'}
+16.7684 	EXP 	fb: autoDraw = False
+16.7684 	EXP 	fix: autoDraw = True
+17.2643 	INFO 	Keyboard events cleared
+17.2639 	EXP 	fix: autoDraw = False
+17.2639 	EXP 	text: height = 0.1
+17.2639 	EXP 	text: height = 0.1
+17.2639 	EXP 	text: height = 0.1
+17.2639 	EXP 	text: text = '他的'
+17.2639 	EXP 	text: autoDraw = True
+18.0088 	DATA 	Mouse: Left button down, pos=(529,316)
+18.2311 	DATA 	Mouse:  Left button up, pos=(529,316)
+18.7602 	EXP 	text: autoDraw = False
+18.7602 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+18.7602 	EXP 	fb: text = '错误'
+18.7602 	EXP 	fb: autoDraw = True
+19.4770 	DATA 	Keypress: e
+19.7322 	EXP 	New trial (rep=0, index=2): {'Words': '我们', 'ans': 'e'}
+19.7602 	EXP 	fb: autoDraw = False
+19.7602 	EXP 	fix: autoDraw = True
+20.2968 	INFO 	Keyboard events cleared
+20.2965 	EXP 	fix: autoDraw = False
+20.2965 	EXP 	text: height = 0.1
+20.2965 	EXP 	text: height = 0.1
+20.2965 	EXP 	text: height = 0.1
+20.2965 	EXP 	text: text = '我们'
+20.2965 	EXP 	text: autoDraw = True
+20.6679 	DATA 	Keypress: i
+20.7024 	EXP 	text: autoDraw = False
+20.7024 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+20.7024 	EXP 	fb: text = '错误'
+20.7024 	EXP 	fb: autoDraw = True
+21.6903 	EXP 	New trial (rep=0, index=3): {'Words': '我的', 'ans': 'e'}
+21.7218 	EXP 	fb: autoDraw = False
+21.7218 	EXP 	fix: autoDraw = True
+22.2305 	INFO 	Keyboard events cleared
+22.2302 	EXP 	fix: autoDraw = False
+22.2302 	EXP 	text: height = 0.1
+22.2302 	EXP 	text: height = 0.1
+22.2302 	EXP 	text: height = 0.1
+22.2302 	EXP 	text: text = '我的'
+22.2302 	EXP 	text: autoDraw = True
+22.6693 	DATA 	Keypress: e
+22.6835 	EXP 	text: autoDraw = False
+22.6835 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+22.6835 	EXP 	fb: height = 0.1
+22.6835 	EXP 	fb: height = 0.1
+22.6835 	EXP 	fb: height = 0.1
+22.6835 	EXP 	fb: text = '正确'
+22.6835 	EXP 	fb: autoDraw = True
+23.6672 	EXP 	New trial (rep=0, index=4): {'Words': '他们', 'ans': 'i'}
+23.6885 	EXP 	fb: autoDraw = False
+23.6885 	EXP 	fix: autoDraw = True
+24.1944 	INFO 	Keyboard events cleared
+24.1941 	EXP 	fix: autoDraw = False
+24.1941 	EXP 	text: height = 0.1
+24.1941 	EXP 	text: height = 0.1
+24.1941 	EXP 	text: height = 0.1
+24.1941 	EXP 	text: text = '他们'
+24.1941 	EXP 	text: autoDraw = True
+24.7023 	DATA 	Keypress: i
+24.7633 	EXP 	text: autoDraw = False
+24.7633 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+24.7633 	EXP 	fb: text = '正确'
+24.7633 	EXP 	fb: autoDraw = True
+25.7497 	EXP 	New trial (rep=0, index=5): {'Words': '我', 'ans': 'e'}
+25.7777 	EXP 	fb: autoDraw = False
+25.7777 	EXP 	fix: autoDraw = True
+26.2687 	INFO 	Keyboard events cleared
+26.2682 	EXP 	fix: autoDraw = False
+26.2682 	EXP 	text: height = 0.1
+26.2682 	EXP 	text: height = 0.1
+26.2682 	EXP 	text: height = 0.1
+26.2682 	EXP 	text: text = '我'
+26.2682 	EXP 	text: autoDraw = True
+26.8332 	DATA 	Keypress: e
+26.8619 	EXP 	text: autoDraw = False
+26.8619 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+26.8619 	EXP 	fb: text = '正确'
+26.8619 	EXP 	fb: autoDraw = True
+27.8341 	EXP 	New trial (rep=0, index=6): {'Words': '他', 'ans': 'i'}
+27.8606 	EXP 	fb: autoDraw = False
+27.8606 	EXP 	fix: autoDraw = True
+28.3665 	INFO 	Keyboard events cleared
+28.3661 	EXP 	fix: autoDraw = False
+28.3661 	EXP 	text: height = 0.1
+28.3661 	EXP 	text: height = 0.1
+28.3661 	EXP 	text: height = 0.1
+28.3661 	EXP 	text: text = '他'
+28.3661 	EXP 	text: autoDraw = True
+28.8044 	DATA 	Keypress: i
+28.8216 	EXP 	text: autoDraw = False
+28.8216 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+28.8216 	EXP 	fb: text = '正确'
+28.8216 	EXP 	fb: autoDraw = True
+29.3037 	DATA 	Keypress: w
+29.8408 	EXP 	New trial (rep=0, index=7): {'Words': '自己', 'ans': 'e'}
+29.8588 	EXP 	fb: autoDraw = False
+29.8588 	EXP 	fix: autoDraw = True
+30.3629 	INFO 	Keyboard events cleared
+30.3626 	EXP 	fix: autoDraw = False
+30.3626 	EXP 	text: height = 0.1
+30.3626 	EXP 	text: height = 0.1
+30.3626 	EXP 	text: height = 0.1
+30.3626 	EXP 	text: text = '自己'
+30.3626 	EXP 	text: autoDraw = True
+30.7981 	DATA 	Keypress: e
+30.8538 	EXP 	text: autoDraw = False
+30.8538 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+30.8538 	EXP 	fb: text = '正确'
+30.8538 	EXP 	fb: autoDraw = True
+31.8327 	EXP 	New trial (rep=0, index=8): {'Words': '俺', 'ans': 'e'}
+31.8594 	EXP 	fb: autoDraw = False
+31.8594 	EXP 	fix: autoDraw = True
+32.3551 	INFO 	Keyboard events cleared
+32.3546 	EXP 	fix: autoDraw = False
+32.3546 	EXP 	text: height = 0.1
+32.3546 	EXP 	text: height = 0.1
+32.3546 	EXP 	text: height = 0.1
+32.3546 	EXP 	text: text = '俺'
+32.3546 	EXP 	text: autoDraw = True
+33.1684 	DATA 	Keypress: i
+33.1986 	EXP 	text: autoDraw = False
+33.1986 	EXP 	fb: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+33.1986 	EXP 	fb: height = 0.1
+33.1986 	EXP 	fb: height = 0.1
+33.1986 	EXP 	fb: height = 0.1
+33.1986 	EXP 	fb: text = '错误'
+33.1986 	EXP 	fb: autoDraw = True
+34.1644 	EXP 	New trial (rep=0, index=9): {'Words': '其他', 'ans': 'i'}
+34.1917 	EXP 	fb: autoDraw = False
+34.1917 	EXP 	fix: autoDraw = True
+34.7251 	INFO 	Keyboard events cleared
+34.7247 	EXP 	fix: autoDraw = False
+34.7247 	EXP 	text: height = 0.1
+34.7247 	EXP 	text: height = 0.1
+34.7247 	EXP 	text: height = 0.1
+34.7247 	EXP 	text: text = '其他'
+34.7247 	EXP 	text: autoDraw = True
+35.2002 	DATA 	Keypress: i
+35.2215 	EXP 	text: autoDraw = False
+35.2215 	EXP 	fb: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+35.2215 	EXP 	fb: height = 0.1
+35.2215 	EXP 	fb: height = 0.1
+35.2215 	EXP 	fb: height = 0.1
+35.2215 	EXP 	fb: text = '正确'
+35.2215 	EXP 	fb: autoDraw = True
+36.2300 	INFO 	Keyboard events cleared
+36.2297 	EXP 	fb: autoDraw = False
+36.2297 	EXP 	Instruction_03: autoDraw = True
+37.1064 	DEBUG 	Read excel file with openpyxl: Loop/Practice_ipn.xlsx
+37.1073 	EXP 	Imported Loop/Practice_ipn.xlsx as conditions, 40 conditions, 2 params
+37.1079 	EXP 	Created sequence: random, trialTypes=40, nReps=1, seed=None
+37.1081 	EXP 	New trial (rep=0, index=0): {'Words_ipn': '自私', 'ans_ipn': 'i'}
+37.1105 	DATA 	Keypress: space
+37.1292 	EXP 	Instruction_03: autoDraw = False
+37.1292 	EXP 	fix: autoDraw = True
+37.6571 	INFO 	Keyboard events cleared
+37.6567 	EXP 	fix: autoDraw = False
+37.6567 	EXP 	text_2: height = 0.1
+37.6567 	EXP 	text_2: height = 0.1
+37.6567 	EXP 	text_2: height = 0.1
+37.6567 	EXP 	text_2: text = '自私'
+37.6567 	EXP 	text_2: autoDraw = True
+37.9433 	DATA 	Keypress: e
+37.9598 	EXP 	text_2: autoDraw = False
+37.9598 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+37.9598 	EXP 	fb_3: height = 0.1
+37.9598 	EXP 	fb_3: height = 0.1
+37.9598 	EXP 	fb_3: height = 0.1
+37.9598 	EXP 	fb_3: text = 'Incorrect'
+37.9598 	EXP 	fb_3: autoDraw = True
+38.9044 	DATA 	Keypress: i
+38.9579 	EXP 	New trial (rep=0, index=1): {'Words_ipn': '暴躁', 'ans_ipn': 'i'}
+38.9652 	EXP 	fb_3: autoDraw = False
+38.9652 	EXP 	fix: autoDraw = True
+39.4998 	INFO 	Keyboard events cleared
+39.4995 	EXP 	fix: autoDraw = False
+39.4995 	EXP 	text_2: height = 0.1
+39.4995 	EXP 	text_2: height = 0.1
+39.4995 	EXP 	text_2: height = 0.1
+39.4995 	EXP 	text_2: text = '暴躁'
+39.4995 	EXP 	text_2: autoDraw = True
+39.7803 	DATA 	Keypress: i
+39.8016 	EXP 	text_2: autoDraw = False
+39.8016 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+39.8016 	EXP 	fb_3: height = 0.1
+39.8016 	EXP 	fb_3: height = 0.1
+39.8016 	EXP 	fb_3: height = 0.1
+39.8016 	EXP 	fb_3: text = 'Correct!'
+39.8016 	EXP 	fb_3: autoDraw = True
+40.7955 	EXP 	New trial (rep=0, index=2): {'Words_ipn': '勇敢', 'ans_ipn': 'e'}
+40.8256 	EXP 	fb_3: autoDraw = False
+40.8256 	EXP 	fix: autoDraw = True
+41.3354 	INFO 	Keyboard events cleared
+41.3350 	EXP 	fix: autoDraw = False
+41.3350 	EXP 	text_2: height = 0.1
+41.3350 	EXP 	text_2: height = 0.1
+41.3350 	EXP 	text_2: height = 0.1
+41.3350 	EXP 	text_2: text = '勇敢'
+41.3350 	EXP 	text_2: autoDraw = True
+41.7739 	DATA 	Keypress: e
+41.7997 	EXP 	text_2: autoDraw = False
+41.7997 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+41.7997 	EXP 	fb_3: text = 'Correct!'
+41.7997 	EXP 	fb_3: autoDraw = True
+42.7977 	EXP 	New trial (rep=0, index=3): {'Words_ipn': '冷静', 'ans_ipn': 'e'}
+42.8261 	EXP 	fb_3: autoDraw = False
+42.8261 	EXP 	fix: autoDraw = True
+43.3288 	INFO 	Keyboard events cleared
+43.3284 	EXP 	fix: autoDraw = False
+43.3284 	EXP 	text_2: height = 0.1
+43.3284 	EXP 	text_2: height = 0.1
+43.3284 	EXP 	text_2: height = 0.1
+43.3284 	EXP 	text_2: text = '冷静'
+43.3284 	EXP 	text_2: autoDraw = True
+44.0375 	DATA 	Keypress: i
+44.0650 	EXP 	text_2: autoDraw = False
+44.0650 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+44.0650 	EXP 	fb_3: height = 0.1
+44.0650 	EXP 	fb_3: height = 0.1
+44.0650 	EXP 	fb_3: height = 0.1
+44.0650 	EXP 	fb_3: text = 'Incorrect'
+44.0650 	EXP 	fb_3: autoDraw = True
+45.0562 	EXP 	New trial (rep=0, index=4): {'Words_ipn': '自卑', 'ans_ipn': 'i'}
+45.0828 	EXP 	fb_3: autoDraw = False
+45.0828 	EXP 	fix: autoDraw = True
+45.3354 	DATA 	Keypress: e
+45.5908 	INFO 	Keyboard events cleared
+45.5904 	EXP 	fix: autoDraw = False
+45.5904 	EXP 	text_2: height = 0.1
+45.5904 	EXP 	text_2: height = 0.1
+45.5904 	EXP 	text_2: height = 0.1
+45.5904 	EXP 	text_2: text = '自卑'
+45.5904 	EXP 	text_2: autoDraw = True
+45.8269 	DATA 	Keypress: e
+45.8579 	EXP 	text_2: autoDraw = False
+45.8579 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+45.8579 	EXP 	fb_3: text = 'Incorrect'
+45.8579 	EXP 	fb_3: autoDraw = True
+46.2618 	DATA 	Keypress: e
+46.5008 	DATA 	Keypress: e
+46.5026 	DATA 	Keypress: i
+46.6917 	DATA 	Keypress: i
+46.8357 	EXP 	New trial (rep=0, index=5): {'Words_ipn': '正直', 'ans_ipn': 'e'}
+46.8620 	EXP 	fb_3: autoDraw = False
+46.8620 	EXP 	fix: autoDraw = True
+46.8990 	DATA 	Keypress: i
+47.3669 	INFO 	Keyboard events cleared
+47.3666 	EXP 	fix: autoDraw = False
+47.3666 	EXP 	text_2: height = 0.1
+47.3666 	EXP 	text_2: height = 0.1
+47.3666 	EXP 	text_2: height = 0.1
+47.3666 	EXP 	text_2: text = '正直'
+47.3666 	EXP 	text_2: autoDraw = True
+47.5690 	DATA 	Keypress: i
+47.5927 	EXP 	text_2: autoDraw = False
+47.5927 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+47.5927 	EXP 	fb_3: text = 'Incorrect'
+47.5927 	EXP 	fb_3: autoDraw = True
+47.7637 	DATA 	Keypress: i
+47.9392 	DATA 	Keypress: i
+48.1047 	DATA 	Keypress: i
+48.3007 	DATA 	Keypress: i
+48.4693 	DATA 	Keypress: i
+48.5915 	EXP 	New trial (rep=0, index=6): {'Words_ipn': '凶狠', 'ans_ipn': 'i'}
+48.6185 	EXP 	fb_3: autoDraw = False
+48.6185 	EXP 	fix: autoDraw = True
+48.6243 	DATA 	Keypress: i
+48.7982 	DATA 	Keypress: i
+48.9653 	DATA 	Keypress: i
+49.1312 	INFO 	Keyboard events cleared
+49.1309 	EXP 	fix: autoDraw = False
+49.1309 	EXP 	text_2: height = 0.1
+49.1309 	EXP 	text_2: height = 0.1
+49.1309 	EXP 	text_2: height = 0.1
+49.1309 	EXP 	text_2: text = '凶狠'
+49.1309 	EXP 	text_2: autoDraw = True
+49.1360 	DATA 	Keypress: i
+49.2316 	EXP 	text_2: autoDraw = False
+49.2316 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+49.2316 	EXP 	fb_3: height = 0.1
+49.2316 	EXP 	fb_3: height = 0.1
+49.2316 	EXP 	fb_3: height = 0.1
+49.2316 	EXP 	fb_3: text = 'Correct!'
+49.2316 	EXP 	fb_3: autoDraw = True
+49.2677 	DATA 	Keypress: i
+49.4580 	DATA 	Keypress: i
+49.6400 	DATA 	Keypress: i
+49.8154 	DATA 	Keypress: i
+50.0001 	DATA 	Keypress: i
+50.1662 	DATA 	Keypress: i
+50.2250 	EXP 	New trial (rep=0, index=7): {'Words_ipn': '稳重', 'ans_ipn': 'e'}
+50.2323 	EXP 	fb_3: autoDraw = False
+50.2323 	EXP 	fix: autoDraw = True
+50.3658 	DATA 	Keypress: i
+50.5328 	DATA 	Keypress: i
+50.6904 	DATA 	Keypress: i
+50.7631 	INFO 	Keyboard events cleared
+50.7627 	EXP 	fix: autoDraw = False
+50.7627 	EXP 	text_2: height = 0.1
+50.7627 	EXP 	text_2: height = 0.1
+50.7627 	EXP 	text_2: height = 0.1
+50.7627 	EXP 	text_2: text = '稳重'
+50.7627 	EXP 	text_2: autoDraw = True
+50.8042 	EXP 	text_2: autoDraw = False
+50.8042 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+50.8042 	EXP 	fb_3: height = 0.1
+50.8042 	EXP 	fb_3: height = 0.1
+50.8042 	EXP 	fb_3: height = 0.1
+50.8042 	EXP 	fb_3: text = 'Incorrect'
+50.8042 	EXP 	fb_3: autoDraw = True
+50.8961 	DATA 	Keypress: i
+51.0340 	DATA 	Keypress: i
+51.2275 	DATA 	Keypress: i
+51.3982 	DATA 	Keypress: i
+51.5660 	DATA 	Keypress: i
+51.7266 	DATA 	Keypress: i
+51.7920 	EXP 	New trial (rep=0, index=8): {'Words_ipn': '认真', 'ans_ipn': 'e'}
+51.8312 	EXP 	fb_3: autoDraw = False
+51.8312 	EXP 	fix: autoDraw = True
+51.8691 	DATA 	Keypress: i
+52.0323 	DATA 	Keypress: i
+52.1933 	DATA 	Keypress: i
+52.3288 	INFO 	Keyboard events cleared
+52.3285 	EXP 	fix: autoDraw = False
+52.3285 	EXP 	text_2: height = 0.1
+52.3285 	EXP 	text_2: height = 0.1
+52.3285 	EXP 	text_2: height = 0.1
+52.3285 	EXP 	text_2: text = '认真'
+52.3285 	EXP 	text_2: autoDraw = True
+52.3337 	DATA 	Keypress: i
+52.4308 	EXP 	text_2: autoDraw = False
+52.4308 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+52.4308 	EXP 	fb_3: text = 'Incorrect'
+52.4308 	EXP 	fb_3: autoDraw = True
+52.5002 	DATA 	Keypress: i
+52.6389 	DATA 	Keypress: i
+52.8008 	DATA 	Keypress: i
+52.9952 	DATA 	Keypress: i
+53.1320 	DATA 	Keypress: i
+53.2944 	DATA 	Keypress: i
+53.4203 	EXP 	New trial (rep=0, index=9): {'Words_ipn': '乐观', 'ans_ipn': 'e'}
+53.4517 	EXP 	fb_3: autoDraw = False
+53.4517 	EXP 	fix: autoDraw = True
+53.4576 	DATA 	Keypress: i
+53.5974 	DATA 	Keypress: i
+53.7561 	DATA 	Keypress: i
+53.9043 	DATA 	Keypress: i
+53.9586 	INFO 	Keyboard events cleared
+53.9583 	EXP 	fix: autoDraw = False
+53.9583 	EXP 	text_2: height = 0.1
+53.9583 	EXP 	text_2: height = 0.1
+53.9583 	EXP 	text_2: height = 0.1
+53.9583 	EXP 	text_2: text = '乐观'
+53.9583 	EXP 	text_2: autoDraw = True
+53.9882 	EXP 	text_2: autoDraw = False
+53.9882 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+53.9882 	EXP 	fb_3: text = 'Incorrect'
+53.9882 	EXP 	fb_3: autoDraw = True
+54.0646 	DATA 	Keypress: i
+54.2232 	DATA 	Keypress: i
+54.3982 	DATA 	Keypress: i
+54.9680 	EXP 	New trial (rep=0, index=10): {'Words_ipn': '猖狂', 'ans_ipn': 'i'}
+54.9997 	EXP 	fb_3: autoDraw = False
+54.9997 	EXP 	fix: autoDraw = True
+55.4960 	INFO 	Keyboard events cleared
+55.4956 	EXP 	fix: autoDraw = False
+55.4956 	EXP 	text_2: height = 0.1
+55.4956 	EXP 	text_2: height = 0.1
+55.4956 	EXP 	text_2: height = 0.1
+55.4956 	EXP 	text_2: text = '猖狂'
+55.4956 	EXP 	text_2: autoDraw = True
+57.0227 	EXP 	text_2: autoDraw = False
+57.0227 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+57.0227 	EXP 	fb_3: text = 'Incorrect'
+57.0227 	EXP 	fb_3: autoDraw = True
+57.9905 	EXP 	New trial (rep=0, index=11): {'Words_ipn': '下贱', 'ans_ipn': 'i'}
+58.0210 	EXP 	fb_3: autoDraw = False
+58.0210 	EXP 	fix: autoDraw = True
+58.5311 	INFO 	Keyboard events cleared
+58.5308 	EXP 	fix: autoDraw = False
+58.5308 	EXP 	text_2: height = 0.1
+58.5308 	EXP 	text_2: height = 0.1
+58.5308 	EXP 	text_2: height = 0.1
+58.5308 	EXP 	text_2: text = '下贱'
+58.5308 	EXP 	text_2: autoDraw = True
+58.6972 	DATA 	Keypress: k
+59.0309 	DATA 	Keypress: i
+59.0573 	EXP 	text_2: autoDraw = False
+59.0573 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+59.0573 	EXP 	fb_3: height = 0.1
+59.0573 	EXP 	fb_3: height = 0.1
+59.0573 	EXP 	fb_3: height = 0.1
+59.0573 	EXP 	fb_3: text = 'Correct!'
+59.0573 	EXP 	fb_3: autoDraw = True
+59.2575 	DATA 	Keypress: i
+59.4649 	DATA 	Keypress: i
+59.6315 	DATA 	Keypress: i
+59.8593 	DATA 	Keypress: i
+60.0549 	EXP 	New trial (rep=0, index=12): {'Words_ipn': '愚蠢', 'ans_ipn': 'i'}
+60.0876 	EXP 	fb_3: autoDraw = False
+60.0876 	EXP 	fix: autoDraw = True
+60.2363 	DATA 	Keypress: i
+60.5836 	INFO 	Keyboard events cleared
+60.5832 	EXP 	fix: autoDraw = False
+60.5832 	EXP 	text_2: height = 0.1
+60.5832 	EXP 	text_2: height = 0.1
+60.5832 	EXP 	text_2: height = 0.1
+60.5832 	EXP 	text_2: text = '愚蠢'
+60.5832 	EXP 	text_2: autoDraw = True
+60.8222 	DATA 	Keypress: i
+60.8488 	EXP 	text_2: autoDraw = False
+60.8488 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+60.8488 	EXP 	fb_3: text = 'Correct!'
+60.8488 	EXP 	fb_3: autoDraw = True
+61.0068 	DATA 	Keypress: i
+61.2283 	DATA 	Keypress: i
+61.4292 	DATA 	Keypress: i
+61.5908 	DATA 	Keypress: i
+61.7986 	DATA 	Keypress: i
+61.8257 	EXP 	New trial (rep=0, index=13): {'Words_ipn': '朴实', 'ans_ipn': 'e'}
+61.8528 	EXP 	fb_3: autoDraw = False
+61.8528 	EXP 	fix: autoDraw = True
+61.9919 	DATA 	Keypress: i
+62.1936 	DATA 	Keypress: i
+62.3764 	INFO 	Keyboard events cleared
+62.3760 	EXP 	fix: autoDraw = False
+62.3760 	EXP 	text_2: height = 0.1
+62.3760 	EXP 	text_2: height = 0.1
+62.3760 	EXP 	text_2: height = 0.1
+62.3760 	EXP 	text_2: text = '朴实'
+62.3760 	EXP 	text_2: autoDraw = True
+62.3831 	DATA 	Keypress: i
+62.5034 	EXP 	text_2: autoDraw = False
+62.5034 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+62.5034 	EXP 	fb_3: height = 0.1
+62.5034 	EXP 	fb_3: height = 0.1
+62.5034 	EXP 	fb_3: height = 0.1
+62.5034 	EXP 	fb_3: text = 'Incorrect'
+62.5034 	EXP 	fb_3: autoDraw = True
+62.5647 	DATA 	Keypress: i
+62.7602 	DATA 	Keypress: i
+62.9673 	DATA 	Keypress: i
+63.1645 	DATA 	Keypress: i
+63.3617 	DATA 	Keypress: i
+63.4971 	EXP 	New trial (rep=0, index=14): {'Words_ipn': '崇高', 'ans_ipn': 'e'}
+63.5343 	EXP 	fb_3: autoDraw = False
+63.5343 	EXP 	fix: autoDraw = True
+63.5402 	DATA 	Keypress: i
+63.7288 	DATA 	Keypress: i
+63.8952 	DATA 	Keypress: i
+64.0411 	INFO 	Keyboard events cleared
+64.0407 	EXP 	fix: autoDraw = False
+64.0407 	EXP 	text_2: height = 0.1
+64.0407 	EXP 	text_2: height = 0.1
+64.0407 	EXP 	text_2: height = 0.1
+64.0407 	EXP 	text_2: text = '崇高'
+64.0407 	EXP 	text_2: autoDraw = True
+64.1121 	DATA 	Keypress: i
+64.1308 	EXP 	text_2: autoDraw = False
+64.1308 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+64.1308 	EXP 	fb_3: text = 'Incorrect'
+64.1308 	EXP 	fb_3: autoDraw = True
+64.2970 	DATA 	Keypress: i
+64.4661 	DATA 	Keypress: i
+64.6941 	DATA 	Keypress: i
+64.8731 	DATA 	Keypress: i
+65.0748 	DATA 	Keypress: i
+65.1372 	EXP 	New trial (rep=0, index=15): {'Words_ipn': '固执', 'ans_ipn': 'i'}
+65.1641 	EXP 	fb_3: autoDraw = False
+65.1641 	EXP 	fix: autoDraw = True
+65.2686 	DATA 	Keypress: i
+65.4706 	DATA 	Keypress: i
+65.6767 	INFO 	Keyboard events cleared
+65.6762 	EXP 	fix: autoDraw = False
+65.6762 	EXP 	text_2: height = 0.1
+65.6762 	EXP 	text_2: height = 0.1
+65.6762 	EXP 	text_2: height = 0.1
+65.6762 	EXP 	text_2: text = '固执'
+65.6762 	EXP 	text_2: autoDraw = True
+65.6836 	DATA 	Keypress: i
+65.7874 	EXP 	text_2: autoDraw = False
+65.7874 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+65.7874 	EXP 	fb_3: height = 0.1
+65.7874 	EXP 	fb_3: height = 0.1
+65.7874 	EXP 	fb_3: height = 0.1
+65.7874 	EXP 	fb_3: text = 'Correct!'
+65.7874 	EXP 	fb_3: autoDraw = True
+65.8592 	DATA 	Keypress: i
+66.0688 	DATA 	Keypress: i
+66.2676 	DATA 	Keypress: i
+66.4440 	DATA 	Keypress: i
+66.6777 	DATA 	Keypress: i
+66.7806 	EXP 	New trial (rep=0, index=16): {'Words_ipn': '消极', 'ans_ipn': 'i'}
+66.8112 	EXP 	fb_3: autoDraw = False
+66.8112 	EXP 	fix: autoDraw = True
+66.8848 	DATA 	Keypress: i
+67.1168 	DATA 	Keypress: i
+67.2849 	INFO 	Keyboard events cleared
+67.2846 	EXP 	fix: autoDraw = False
+67.2846 	EXP 	text_2: height = 0.1
+67.2846 	EXP 	text_2: height = 0.1
+67.2846 	EXP 	text_2: height = 0.1
+67.2846 	EXP 	text_2: text = '消极'
+67.2846 	EXP 	text_2: autoDraw = True
+67.2949 	DATA 	Keypress: i
+67.3613 	EXP 	text_2: autoDraw = False
+67.3613 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+67.3613 	EXP 	fb_3: text = 'Correct!'
+67.3613 	EXP 	fb_3: autoDraw = True
+67.5036 	DATA 	Keypress: i
+67.7291 	DATA 	Keypress: i
+67.9285 	DATA 	Keypress: i
+68.1345 	DATA 	Keypress: i
+68.3314 	EXP 	New trial (rep=0, index=17): {'Words_ipn': '出门', 'ans_ipn': 'e'}
+68.3365 	DATA 	Keypress: i
+68.3683 	EXP 	fb_3: autoDraw = False
+68.3683 	EXP 	fix: autoDraw = True
+68.5471 	DATA 	Keypress: i
+68.7261 	DATA 	Keypress: i
+68.8573 	INFO 	Keyboard events cleared
+68.8569 	EXP 	fix: autoDraw = False
+68.8569 	EXP 	text_2: height = 0.1
+68.8569 	EXP 	text_2: height = 0.1
+68.8569 	EXP 	text_2: height = 0.1
+68.8569 	EXP 	text_2: text = '出门'
+68.8569 	EXP 	text_2: autoDraw = True
+68.9379 	DATA 	Keypress: i
+68.9907 	EXP 	text_2: autoDraw = False
+68.9907 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+68.9907 	EXP 	fb_3: height = 0.1
+68.9907 	EXP 	fb_3: height = 0.1
+68.9907 	EXP 	fb_3: height = 0.1
+68.9907 	EXP 	fb_3: text = 'Incorrect'
+68.9907 	EXP 	fb_3: autoDraw = True
+69.1313 	DATA 	Keypress: i
+69.3589 	DATA 	Keypress: i
+69.5772 	DATA 	Keypress: i
+69.7598 	DATA 	Keypress: i
+69.9662 	DATA 	Keypress: i
+69.9946 	EXP 	New trial (rep=0, index=18): {'Words_ipn': '野蛮', 'ans_ipn': 'i'}
+70.0267 	EXP 	fb_3: autoDraw = False
+70.0267 	EXP 	fix: autoDraw = True
+70.1417 	DATA 	Keypress: i
+70.3329 	DATA 	Keypress: i
+70.5162 	INFO 	Keyboard events cleared
+70.5158 	EXP 	fix: autoDraw = False
+70.5158 	EXP 	text_2: height = 0.1
+70.5158 	EXP 	text_2: height = 0.1
+70.5158 	EXP 	text_2: height = 0.1
+70.5158 	EXP 	text_2: text = '野蛮'
+70.5158 	EXP 	text_2: autoDraw = True
+70.5341 	DATA 	Keypress: i
+70.5522 	EXP 	text_2: autoDraw = False
+70.5522 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+70.5522 	EXP 	fb_3: height = 0.1
+70.5522 	EXP 	fb_3: height = 0.1
+70.5522 	EXP 	fb_3: height = 0.1
+70.5522 	EXP 	fb_3: text = 'Correct!'
+70.5522 	EXP 	fb_3: autoDraw = True
+70.7462 	DATA 	Keypress: i
+70.9622 	DATA 	Keypress: i
+71.1676 	DATA 	Keypress: i
+71.3899 	DATA 	Keypress: i
+71.5312 	EXP 	New trial (rep=0, index=19): {'Words_ipn': '虚伪', 'ans_ipn': 'i'}
+71.5674 	EXP 	fb_3: autoDraw = False
+71.5674 	EXP 	fix: autoDraw = True
+71.5787 	DATA 	Keypress: i
+71.7936 	DATA 	Keypress: i
+71.9882 	DATA 	Keypress: i
+72.0899 	INFO 	Keyboard events cleared
+72.0894 	EXP 	fix: autoDraw = False
+72.0894 	EXP 	text_2: height = 0.1
+72.0894 	EXP 	text_2: height = 0.1
+72.0894 	EXP 	text_2: height = 0.1
+72.0894 	EXP 	text_2: text = '虚伪'
+72.0894 	EXP 	text_2: autoDraw = True
+72.1255 	EXP 	text_2: autoDraw = False
+72.1255 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+72.1255 	EXP 	fb_3: text = 'Correct!'
+72.1255 	EXP 	fb_3: autoDraw = True
+72.2023 	DATA 	Keypress: i
+72.3948 	DATA 	Keypress: i
+72.5747 	DATA 	Keypress: i
+72.7939 	DATA 	Keypress: i
+72.9999 	DATA 	Keypress: i
+73.1230 	EXP 	New trial (rep=0, index=20): {'Words_ipn': '悲观', 'ans_ipn': 'i'}
+73.1329 	EXP 	fb_3: autoDraw = False
+73.1329 	EXP 	fix: autoDraw = True
+73.1943 	DATA 	Keypress: i
+73.3704 	DATA 	Keypress: i
+73.5647 	DATA 	Keypress: i
+73.6243 	INFO 	Keyboard events cleared
+73.6239 	EXP 	fix: autoDraw = False
+73.6239 	EXP 	text_2: height = 0.1
+73.6239 	EXP 	text_2: height = 0.1
+73.6239 	EXP 	text_2: height = 0.1
+73.6239 	EXP 	text_2: text = '悲观'
+73.6239 	EXP 	text_2: autoDraw = True
+73.6530 	EXP 	text_2: autoDraw = False
+73.6530 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+73.6530 	EXP 	fb_3: text = 'Correct!'
+73.6530 	EXP 	fb_3: autoDraw = True
+73.7648 	DATA 	Keypress: i
+73.9378 	DATA 	Keypress: i
+74.1360 	DATA 	Keypress: i
+74.3248 	DATA 	Keypress: i
+74.5387 	DATA 	Keypress: i
+74.6323 	EXP 	New trial (rep=0, index=21): {'Words_ipn': '冒失', 'ans_ipn': 'i'}
+74.6595 	EXP 	fb_3: autoDraw = False
+74.6595 	EXP 	fix: autoDraw = True
+74.7303 	DATA 	Keypress: i
+74.9282 	DATA 	Keypress: i
+75.1748 	DATA 	Keypress: i
+75.2079 	INFO 	Keyboard events cleared
+75.2075 	EXP 	fix: autoDraw = False
+75.2075 	EXP 	text_2: height = 0.1
+75.2075 	EXP 	text_2: height = 0.1
+75.2075 	EXP 	text_2: height = 0.1
+75.2075 	EXP 	text_2: text = '冒失'
+75.2075 	EXP 	text_2: autoDraw = True
+75.2374 	EXP 	text_2: autoDraw = False
+75.2374 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+75.2374 	EXP 	fb_3: text = 'Correct!'
+75.2374 	EXP 	fb_3: autoDraw = True
+75.3382 	DATA 	Keypress: i
+75.5280 	DATA 	Keypress: i
+75.7219 	DATA 	Keypress: i
+75.8974 	DATA 	Keypress: i
+76.0997 	DATA 	Keypress: i
+76.2254 	EXP 	New trial (rep=0, index=22): {'Words_ipn': '机智', 'ans_ipn': 'e'}
+76.2598 	EXP 	fb_3: autoDraw = False
+76.2598 	EXP 	fix: autoDraw = True
+76.3298 	DATA 	Keypress: i
+76.5055 	DATA 	Keypress: i
+76.7079 	DATA 	Keypress: i
+76.7728 	INFO 	Keyboard events cleared
+76.7724 	EXP 	fix: autoDraw = False
+76.7724 	EXP 	text_2: height = 0.1
+76.7724 	EXP 	text_2: height = 0.1
+76.7724 	EXP 	text_2: height = 0.1
+76.7724 	EXP 	text_2: text = '机智'
+76.7724 	EXP 	text_2: autoDraw = True
+76.8070 	EXP 	text_2: autoDraw = False
+76.8070 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+76.8070 	EXP 	fb_3: height = 0.1
+76.8070 	EXP 	fb_3: height = 0.1
+76.8070 	EXP 	fb_3: height = 0.1
+76.8070 	EXP 	fb_3: text = 'Incorrect'
+76.8070 	EXP 	fb_3: autoDraw = True
+76.9115 	DATA 	Keypress: i
+77.1089 	DATA 	Keypress: i
+77.3026 	DATA 	Keypress: i
+77.4996 	DATA 	Keypress: i
+77.6972 	DATA 	Keypress: i
+77.7987 	EXP 	New trial (rep=0, index=23): {'Words_ipn': '细腻', 'ans_ipn': 'e'}
+77.8260 	EXP 	fb_3: autoDraw = False
+77.8260 	EXP 	fix: autoDraw = True
+77.9006 	DATA 	Keypress: i
+78.1016 	DATA 	Keypress: i
+78.2640 	DATA 	Keypress: i
+78.3338 	INFO 	Keyboard events cleared
+78.3333 	EXP 	fix: autoDraw = False
+78.3333 	EXP 	text_2: height = 0.1
+78.3333 	EXP 	text_2: height = 0.1
+78.3333 	EXP 	text_2: height = 0.1
+78.3333 	EXP 	text_2: text = '细腻'
+78.3333 	EXP 	text_2: autoDraw = True
+78.3790 	EXP 	text_2: autoDraw = False
+78.3790 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+78.3790 	EXP 	fb_3: text = 'Incorrect'
+78.3790 	EXP 	fb_3: autoDraw = True
+78.4739 	DATA 	Keypress: i
+78.6679 	DATA 	Keypress: i
+78.8616 	DATA 	Keypress: i
+79.0645 	DATA 	Keypress: i
+79.2616 	DATA 	Keypress: i
+79.3638 	EXP 	New trial (rep=0, index=24): {'Words_ipn': '轻率', 'ans_ipn': 'i'}
+79.3997 	EXP 	fb_3: autoDraw = False
+79.3997 	EXP 	fix: autoDraw = True
+79.4506 	DATA 	Keypress: i
+79.6370 	DATA 	Keypress: i
+79.8304 	DATA 	Keypress: i
+79.8961 	INFO 	Keyboard events cleared
+79.8956 	EXP 	fix: autoDraw = False
+79.8956 	EXP 	text_2: height = 0.1
+79.8956 	EXP 	text_2: height = 0.1
+79.8956 	EXP 	text_2: height = 0.1
+79.8956 	EXP 	text_2: text = '轻率'
+79.8956 	EXP 	text_2: autoDraw = True
+79.9286 	EXP 	text_2: autoDraw = False
+79.9286 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+79.9286 	EXP 	fb_3: height = 0.1
+79.9286 	EXP 	fb_3: height = 0.1
+79.9286 	EXP 	fb_3: height = 0.1
+79.9286 	EXP 	fb_3: text = 'Correct!'
+79.9286 	EXP 	fb_3: autoDraw = True
+80.0343 	DATA 	Keypress: i
+80.2289 	DATA 	Keypress: i
+80.4329 	DATA 	Keypress: i
+80.6114 	DATA 	Keypress: i
+80.7958 	DATA 	Keypress: i
+80.9231 	EXP 	New trial (rep=0, index=25): {'Words_ipn': '卑鄙', 'ans_ipn': 'i'}
+80.9297 	EXP 	fb_3: autoDraw = False
+80.9297 	EXP 	fix: autoDraw = True
+80.9933 	DATA 	Keypress: i
+81.1775 	DATA 	Keypress: i
+81.3693 	DATA 	Keypress: i
+81.4230 	INFO 	Keyboard events cleared
+81.4224 	EXP 	fix: autoDraw = False
+81.4224 	EXP 	text_2: height = 0.1
+81.4224 	EXP 	text_2: height = 0.1
+81.4224 	EXP 	text_2: height = 0.1
+81.4224 	EXP 	text_2: text = '卑鄙'
+81.4224 	EXP 	text_2: autoDraw = True
+81.4612 	EXP 	text_2: autoDraw = False
+81.4612 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+81.4612 	EXP 	fb_3: text = 'Correct!'
+81.4612 	EXP 	fb_3: autoDraw = True
+81.5364 	DATA 	Keypress: i
+81.7354 	DATA 	Keypress: i
+81.9088 	DATA 	Keypress: i
+82.0806 	DATA 	Keypress: i
+82.2711 	DATA 	Keypress: i
+82.4558 	EXP 	New trial (rep=0, index=26): {'Words_ipn': '刻薄', 'ans_ipn': 'i'}
+82.4592 	DATA 	Keypress: i
+82.4834 	EXP 	fb_3: autoDraw = False
+82.4834 	EXP 	fix: autoDraw = True
+82.6702 	DATA 	Keypress: i
+82.8656 	DATA 	Keypress: i
+82.9569 	INFO 	Keyboard events cleared
+82.9565 	EXP 	fix: autoDraw = False
+82.9565 	EXP 	text_2: height = 0.1
+82.9565 	EXP 	text_2: height = 0.1
+82.9565 	EXP 	text_2: height = 0.1
+82.9565 	EXP 	text_2: text = '刻薄'
+82.9565 	EXP 	text_2: autoDraw = True
+82.9984 	EXP 	text_2: autoDraw = False
+82.9984 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+82.9984 	EXP 	fb_3: text = 'Correct!'
+82.9984 	EXP 	fb_3: autoDraw = True
+83.0355 	DATA 	Keypress: i
+83.2335 	DATA 	Keypress: i
+83.4310 	DATA 	Keypress: i
+83.5980 	DATA 	Keypress: i
+83.7991 	DATA 	Keypress: i
+83.9929 	EXP 	New trial (rep=0, index=27): {'Words_ipn': '公正', 'ans_ipn': 'e'}
+83.9958 	DATA 	Keypress: i
+84.0333 	EXP 	fb_3: autoDraw = False
+84.0333 	EXP 	fix: autoDraw = True
+84.2004 	DATA 	Keypress: i
+84.3695 	DATA 	Keypress: i
+84.5364 	INFO 	Keyboard events cleared
+84.5360 	EXP 	fix: autoDraw = False
+84.5360 	EXP 	text_2: height = 0.1
+84.5360 	EXP 	text_2: height = 0.1
+84.5360 	EXP 	text_2: height = 0.1
+84.5360 	EXP 	text_2: text = '公正'
+84.5360 	EXP 	text_2: autoDraw = True
+84.5467 	DATA 	Keypress: i
+84.5845 	EXP 	text_2: autoDraw = False
+84.5845 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+84.5845 	EXP 	fb_3: height = 0.1
+84.5845 	EXP 	fb_3: height = 0.1
+84.5845 	EXP 	fb_3: height = 0.1
+84.5845 	EXP 	fb_3: text = 'Incorrect'
+84.5845 	EXP 	fb_3: autoDraw = True
+84.7193 	DATA 	Keypress: i
+84.9323 	DATA 	Keypress: i
+85.1328 	DATA 	Keypress: i
+85.3021 	DATA 	Keypress: i
+85.5034 	DATA 	Keypress: i
+85.5445 	EXP 	New trial (rep=0, index=28): {'Words_ipn': '优秀', 'ans_ipn': 'e'}
+85.5691 	EXP 	fb_3: autoDraw = False
+85.5691 	EXP 	fix: autoDraw = True
+85.7321 	DATA 	Keypress: i
+85.9295 	DATA 	Keypress: i
+86.0968 	INFO 	Keyboard events cleared
+86.0965 	EXP 	fix: autoDraw = False
+86.0965 	EXP 	text_2: height = 0.1
+86.0965 	EXP 	text_2: height = 0.1
+86.0965 	EXP 	text_2: height = 0.1
+86.0965 	EXP 	text_2: text = '优秀'
+86.0965 	EXP 	text_2: autoDraw = True
+86.1393 	EXP 	text_2: autoDraw = False
+86.1393 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+86.1393 	EXP 	fb_3: text = 'Incorrect'
+86.1393 	EXP 	fb_3: autoDraw = True
+86.1458 	DATA 	Keypress: i
+86.3006 	DATA 	Keypress: i
+86.4982 	DATA 	Keypress: i
+86.6920 	DATA 	Keypress: i
+86.9080 	DATA 	Keypress: i
+87.0928 	DATA 	Keypress: i
+87.1021 	EXP 	New trial (rep=0, index=29): {'Words_ipn': '执拗', 'ans_ipn': 'i'}
+87.1261 	EXP 	fb_3: autoDraw = False
+87.1261 	EXP 	fix: autoDraw = True
+87.2808 	DATA 	Keypress: i
+87.4838 	DATA 	Keypress: i
+87.6644 	INFO 	Keyboard events cleared
+87.6639 	EXP 	fix: autoDraw = False
+87.6639 	EXP 	text_2: height = 0.1
+87.6639 	EXP 	text_2: height = 0.1
+87.6639 	EXP 	text_2: height = 0.1
+87.6639 	EXP 	text_2: text = '执拗'
+87.6639 	EXP 	text_2: autoDraw = True
+87.6728 	DATA 	Keypress: i
+87.6925 	EXP 	text_2: autoDraw = False
+87.6925 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+87.6925 	EXP 	fb_3: height = 0.1
+87.6925 	EXP 	fb_3: height = 0.1
+87.6925 	EXP 	fb_3: height = 0.1
+87.6925 	EXP 	fb_3: text = 'Correct!'
+87.6925 	EXP 	fb_3: autoDraw = True
+87.8274 	DATA 	Keypress: i
+88.0283 	DATA 	Keypress: i
+88.2001 	DATA 	Keypress: i
+88.4949 	DATA 	Keypress: i
+88.6480 	DATA 	Keypress: i
+88.6955 	EXP 	New trial (rep=0, index=30): {'Words_ipn': '诚恳', 'ans_ipn': 'e'}
+88.7287 	EXP 	fb_3: autoDraw = False
+88.7287 	EXP 	fix: autoDraw = True
+88.8357 	DATA 	Keypress: i
+89.0016 	DATA 	Keypress: i
+89.1684 	DATA 	Keypress: i
+89.2260 	INFO 	Keyboard events cleared
+89.2257 	EXP 	fix: autoDraw = False
+89.2257 	EXP 	text_2: height = 0.1
+89.2257 	EXP 	text_2: height = 0.1
+89.2257 	EXP 	text_2: height = 0.1
+89.2257 	EXP 	text_2: text = '诚恳'
+89.2257 	EXP 	text_2: autoDraw = True
+89.2652 	EXP 	text_2: autoDraw = False
+89.2652 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+89.2652 	EXP 	fb_3: height = 0.1
+89.2652 	EXP 	fb_3: height = 0.1
+89.2652 	EXP 	fb_3: height = 0.1
+89.2652 	EXP 	fb_3: text = 'Incorrect'
+89.2652 	EXP 	fb_3: autoDraw = True
+89.3280 	DATA 	Keypress: i
+89.5035 	DATA 	Keypress: i
+89.7245 	DATA 	Keypress: i
+89.8964 	DATA 	Keypress: i
+90.1601 	DATA 	Keypress: i
+90.2354 	EXP 	New trial (rep=0, index=31): {'Words_ipn': '诚实', 'ans_ipn': 'e'}
+90.2587 	EXP 	fb_3: autoDraw = False
+90.2587 	EXP 	fix: autoDraw = True
+90.2973 	DATA 	Keypress: i
+90.5350 	DATA 	Keypress: i
+90.7411 	DATA 	Keypress: i
+90.7678 	INFO 	Keyboard events cleared
+90.7674 	EXP 	fix: autoDraw = False
+90.7674 	EXP 	text_2: height = 0.1
+90.7674 	EXP 	text_2: height = 0.1
+90.7674 	EXP 	text_2: height = 0.1
+90.7674 	EXP 	text_2: text = '诚实'
+90.7674 	EXP 	text_2: autoDraw = True
+90.7979 	EXP 	text_2: autoDraw = False
+90.7979 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+90.7979 	EXP 	fb_3: text = 'Incorrect'
+90.7979 	EXP 	fb_3: autoDraw = True
+90.9714 	DATA 	Keypress: i
+91.1444 	DATA 	Keypress: i
+91.3591 	DATA 	Keypress: i
+91.5925 	DATA 	Keypress: i
+91.7594 	DATA 	Keypress: i
+91.7876 	EXP 	New trial (rep=0, index=32): {'Words_ipn': '无私', 'ans_ipn': 'e'}
+91.7980 	EXP 	fb_3: autoDraw = False
+91.7980 	EXP 	fix: autoDraw = True
+91.9984 	DATA 	Keypress: i
+92.2019 	DATA 	Keypress: i
+92.3370 	INFO 	Keyboard events cleared
+92.3365 	EXP 	fix: autoDraw = False
+92.3365 	EXP 	text_2: height = 0.1
+92.3365 	EXP 	text_2: height = 0.1
+92.3365 	EXP 	text_2: height = 0.1
+92.3365 	EXP 	text_2: text = '无私'
+92.3365 	EXP 	text_2: autoDraw = True
+92.3670 	EXP 	text_2: autoDraw = False
+92.3670 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+92.3670 	EXP 	fb_3: text = 'Incorrect'
+92.3670 	EXP 	fb_3: autoDraw = True
+92.4308 	DATA 	Keypress: i
+92.6426 	DATA 	Keypress: i
+92.8595 	DATA 	Keypress: i
+93.0373 	DATA 	Keypress: i
+93.2675 	DATA 	Keypress: i
+93.3584 	EXP 	New trial (rep=0, index=33): {'Words_ipn': '勤奋', 'ans_ipn': 'e'}
+93.3845 	EXP 	fb_3: autoDraw = False
+93.3845 	EXP 	fix: autoDraw = True
+93.4649 	DATA 	Keypress: i
+93.6713 	DATA 	Keypress: i
+93.8810 	DATA 	Keypress: i
+93.9111 	INFO 	Keyboard events cleared
+93.9107 	EXP 	fix: autoDraw = False
+93.9107 	EXP 	text_2: height = 0.1
+93.9107 	EXP 	text_2: height = 0.1
+93.9107 	EXP 	text_2: height = 0.1
+93.9107 	EXP 	text_2: text = '勤奋'
+93.9107 	EXP 	text_2: autoDraw = True
+93.9421 	EXP 	text_2: autoDraw = False
+93.9421 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+93.9421 	EXP 	fb_3: text = 'Incorrect'
+93.9421 	EXP 	fb_3: autoDraw = True
+94.0460 	DATA 	Keypress: i
+94.2355 	DATA 	Keypress: i
+94.4270 	DATA 	Keypress: i
+94.6629 	DATA 	Keypress: i
+94.8635 	DATA 	Keypress: i
+94.9292 	EXP 	New trial (rep=0, index=34): {'Words_ipn': '活泼', 'ans_ipn': 'e'}
+94.9546 	EXP 	fb_3: autoDraw = False
+94.9546 	EXP 	fix: autoDraw = True
+95.0309 	DATA 	Keypress: i
+95.2635 	DATA 	Keypress: i
+95.4589 	INFO 	Keyboard events cleared
+95.4585 	EXP 	fix: autoDraw = False
+95.4585 	EXP 	text_2: height = 0.1
+95.4585 	EXP 	text_2: height = 0.1
+95.4585 	EXP 	text_2: height = 0.1
+95.4585 	EXP 	text_2: text = '活泼'
+95.4585 	EXP 	text_2: autoDraw = True
+95.4956 	EXP 	text_2: autoDraw = False
+95.4956 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+95.4956 	EXP 	fb_3: text = 'Incorrect'
+95.4956 	EXP 	fb_3: autoDraw = True
+95.5017 	DATA 	Keypress: i
+95.7262 	DATA 	Keypress: i
+95.8941 	DATA 	Keypress: i
+96.0946 	DATA 	Keypress: i
+96.3052 	DATA 	Keypress: i
+96.4920 	EXP 	New trial (rep=0, index=35): {'Words_ipn': '傲慢', 'ans_ipn': 'i'}
+96.4944 	DATA 	Keypress: i
+96.5287 	EXP 	fb_3: autoDraw = False
+96.5287 	EXP 	fix: autoDraw = True
+96.6719 	DATA 	Keypress: i
+96.8648 	DATA 	Keypress: i
+97.0223 	INFO 	Keyboard events cleared
+97.0218 	EXP 	fix: autoDraw = False
+97.0218 	EXP 	text_2: height = 0.1
+97.0218 	EXP 	text_2: height = 0.1
+97.0218 	EXP 	text_2: height = 0.1
+97.0218 	EXP 	text_2: text = '傲慢'
+97.0218 	EXP 	text_2: autoDraw = True
+97.0538 	EXP 	text_2: autoDraw = False
+97.0538 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+97.0538 	EXP 	fb_3: height = 0.1
+97.0538 	EXP 	fb_3: height = 0.1
+97.0538 	EXP 	fb_3: height = 0.1
+97.0538 	EXP 	fb_3: text = 'Correct!'
+97.0538 	EXP 	fb_3: autoDraw = True
+97.0607 	DATA 	Keypress: i
+97.2627 	DATA 	Keypress: i
+97.4653 	DATA 	Keypress: i
+97.6697 	DATA 	Keypress: i
+97.8778 	DATA 	Keypress: i
+98.0314 	EXP 	New trial (rep=0, index=36): {'Words_ipn': '杰出', 'ans_ipn': 'e'}
+98.0633 	EXP 	fb_3: autoDraw = False
+98.0633 	EXP 	fix: autoDraw = True
+98.0682 	DATA 	Keypress: i
+98.2655 	DATA 	Keypress: i
+98.4667 	DATA 	Keypress: i
+98.5669 	INFO 	Keyboard events cleared
+98.5666 	EXP 	fix: autoDraw = False
+98.5666 	EXP 	text_2: height = 0.1
+98.5666 	EXP 	text_2: height = 0.1
+98.5666 	EXP 	text_2: height = 0.1
+98.5666 	EXP 	text_2: text = '杰出'
+98.5666 	EXP 	text_2: autoDraw = True
+98.6032 	EXP 	text_2: autoDraw = False
+98.6032 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+98.6032 	EXP 	fb_3: height = 0.1
+98.6032 	EXP 	fb_3: height = 0.1
+98.6032 	EXP 	fb_3: height = 0.1
+98.6032 	EXP 	fb_3: text = 'Incorrect'
+98.6032 	EXP 	fb_3: autoDraw = True
+98.6410 	DATA 	Keypress: i
+98.8329 	DATA 	Keypress: i
+99.0309 	DATA 	Keypress: i
+99.2332 	DATA 	Keypress: i
+99.4100 	DATA 	Keypress: i
+99.5963 	EXP 	New trial (rep=0, index=37): {'Words_ipn': '热情', 'ans_ipn': 'e'}
+99.6240 	EXP 	fb_3: autoDraw = False
+99.6240 	EXP 	fix: autoDraw = True
+99.6304 	DATA 	Keypress: i
+99.8027 	DATA 	Keypress: i
+99.9957 	DATA 	Keypress: i
+100.1223 	INFO 	Keyboard events cleared
+100.1219 	EXP 	fix: autoDraw = False
+100.1219 	EXP 	text_2: height = 0.1
+100.1219 	EXP 	text_2: height = 0.1
+100.1219 	EXP 	text_2: height = 0.1
+100.1219 	EXP 	text_2: text = '热情'
+100.1219 	EXP 	text_2: autoDraw = True
+100.1535 	EXP 	text_2: autoDraw = False
+100.1535 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+100.1535 	EXP 	fb_3: text = 'Incorrect'
+100.1535 	EXP 	fb_3: autoDraw = True
+100.1919 	DATA 	Keypress: i
+100.3945 	DATA 	Keypress: i
+100.6353 	DATA 	Keypress: i
+100.9259 	DATA 	Keypress: i
+101.1422 	EXP 	New trial (rep=0, index=38): {'Words_ipn': '散漫', 'ans_ipn': 'i'}
+101.1722 	EXP 	fb_3: autoDraw = False
+101.1722 	EXP 	fix: autoDraw = True
+101.5287 	DATA 	Keypress: i
+101.7041 	INFO 	Keyboard events cleared
+101.7037 	EXP 	fix: autoDraw = False
+101.7037 	EXP 	text_2: height = 0.1
+101.7037 	EXP 	text_2: height = 0.1
+101.7037 	EXP 	text_2: height = 0.1
+101.7037 	EXP 	text_2: text = '散漫'
+101.7037 	EXP 	text_2: autoDraw = True
+101.7342 	EXP 	text_2: autoDraw = False
+101.7342 	EXP 	fb_3: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+101.7342 	EXP 	fb_3: height = 0.1
+101.7342 	EXP 	fb_3: height = 0.1
+101.7342 	EXP 	fb_3: height = 0.1
+101.7342 	EXP 	fb_3: text = 'Correct!'
+101.7342 	EXP 	fb_3: autoDraw = True
+101.8014 	DATA 	Keypress: i
+102.2293 	DATA 	Keypress: i
+102.4310 	DATA 	Keypress: i
+102.7035 	DATA 	Keypress: i
+102.7395 	EXP 	New trial (rep=0, index=39): {'Words_ipn': '鲁莽', 'ans_ipn': 'i'}
+102.7630 	EXP 	fb_3: autoDraw = False
+102.7630 	EXP 	fix: autoDraw = True
+102.8982 	DATA 	Keypress: i
+103.1338 	DATA 	Keypress: e
+103.2681 	INFO 	Keyboard events cleared
+103.2676 	EXP 	fix: autoDraw = False
+103.2676 	EXP 	text_2: height = 0.1
+103.2676 	EXP 	text_2: height = 0.1
+103.2676 	EXP 	text_2: height = 0.1
+103.2676 	EXP 	text_2: text = '鲁莽'
+103.2676 	EXP 	text_2: autoDraw = True
+103.3049 	EXP 	text_2: autoDraw = False
+103.3049 	EXP 	fb_3: foreColor = <psychopy.colors.Color: red, alpha=1.0>
+103.3049 	EXP 	fb_3: height = 0.1
+103.3049 	EXP 	fb_3: height = 0.1
+103.3049 	EXP 	fb_3: height = 0.1
+103.3049 	EXP 	fb_3: text = 'Incorrect'
+103.3049 	EXP 	fb_3: autoDraw = True
+103.5755 	DATA 	Keypress: e
+103.6452 	DATA 	Keypress: i
+103.8358 	DATA 	Keypress: e
+103.9670 	DATA 	Keypress: i
+104.1702 	DATA 	Keypress: e
+104.2671 	DATA 	Keypress: i
+104.3223 	INFO 	Keyboard events cleared
+104.3208 	EXP 	fb_3: autoDraw = False
+104.3208 	EXP 	Instruction_04: autoDraw = True
+104.4614 	DATA 	Keypress: e
+104.6539 	DATA 	Keypress: i
+106.0427 	DEBUG 	Read excel file with openpyxl: Loop/Practice_t1.xlsx
+106.0437 	EXP 	Imported Loop/Practice_t1.xlsx as conditions, 50 conditions, 2 params
+106.0444 	EXP 	Created sequence: random, trialTypes=50, nReps=1, seed=None
+106.0446 	EXP 	New trial (rep=0, index=0): {'Words_t1': '活泼', 'ans_t1': 'e'}
+106.0471 	DATA 	Keypress: space
+106.0687 	EXP 	Instruction_04: autoDraw = False
+106.0687 	EXP 	fix: autoDraw = True
+106.6051 	INFO 	Keyboard events cleared
+106.6048 	EXP 	fix: autoDraw = False
+106.6048 	EXP 	text_3: height = 0.1
+106.6048 	EXP 	text_3: height = 0.1
+106.6048 	EXP 	text_3: height = 0.1
+106.6048 	EXP 	text_3: text = '活泼'
+106.6048 	EXP 	text_3: autoDraw = True
+106.6311 	EXP 	text_3: autoDraw = False
+106.6311 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+106.6311 	EXP 	fb_2: height = 0.1
+106.6311 	EXP 	fb_2: height = 0.1
+106.6311 	EXP 	fb_2: height = 0.1
+106.6311 	EXP 	fb_2: text = 'Correct!'
+106.6311 	EXP 	fb_2: autoDraw = True
+107.6287 	EXP 	New trial (rep=0, index=1): {'Words_t1': '俺', 'ans_t1': 'e'}
+107.6574 	EXP 	fb_2: autoDraw = False
+107.6574 	EXP 	fix: autoDraw = True
+108.1640 	INFO 	Keyboard events cleared
+108.1635 	EXP 	fix: autoDraw = False
+108.1635 	EXP 	text_3: height = 0.1
+108.1635 	EXP 	text_3: height = 0.1
+108.1635 	EXP 	text_3: height = 0.1
+108.1635 	EXP 	text_3: text = '俺'
+108.1635 	EXP 	text_3: autoDraw = True
+109.0180 	DATA 	Keypress: e
+109.0476 	EXP 	text_3: autoDraw = False
+109.0476 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+109.0476 	EXP 	fb_2: text = 'Correct!'
+109.0476 	EXP 	fb_2: autoDraw = True
+110.0307 	EXP 	New trial (rep=0, index=2): {'Words_t1': '正直', 'ans_t1': 'e'}
+110.0572 	EXP 	fb_2: autoDraw = False
+110.0572 	EXP 	fix: autoDraw = True
+110.5558 	INFO 	Keyboard events cleared
+110.5553 	EXP 	fix: autoDraw = False
+110.5553 	EXP 	text_3: height = 0.1
+110.5553 	EXP 	text_3: height = 0.1
+110.5553 	EXP 	text_3: height = 0.1
+110.5553 	EXP 	text_3: text = '正直'
+110.5553 	EXP 	text_3: autoDraw = True
+111.5266 	DATA 	Keypress: e
+111.5619 	EXP 	text_3: autoDraw = False
+111.5619 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+111.5619 	EXP 	fb_2: text = 'Correct!'
+111.5619 	EXP 	fb_2: autoDraw = True
+112.5349 	EXP 	New trial (rep=0, index=3): {'Words_t1': '其他', 'ans_t1': 'i'}
+112.5607 	EXP 	fb_2: autoDraw = False
+112.5607 	EXP 	fix: autoDraw = True
+113.0557 	INFO 	Keyboard events cleared
+113.0552 	EXP 	fix: autoDraw = False
+113.0552 	EXP 	text_3: height = 0.1
+113.0552 	EXP 	text_3: height = 0.1
+113.0552 	EXP 	text_3: height = 0.1
+113.0552 	EXP 	text_3: text = '其他'
+113.0552 	EXP 	text_3: autoDraw = True
+113.5023 	DATA 	Keypress: i
+113.5225 	EXP 	text_3: autoDraw = False
+113.5225 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+113.5225 	EXP 	fb_2: text = 'Correct!'
+113.5225 	EXP 	fb_2: autoDraw = True
+114.5343 	EXP 	New trial (rep=0, index=4): {'Words_t1': '热情', 'ans_t1': 'e'}
+114.5572 	EXP 	fb_2: autoDraw = False
+114.5572 	EXP 	fix: autoDraw = True
+115.0241 	INFO 	Keyboard events cleared
+115.0238 	EXP 	fix: autoDraw = False
+115.0238 	EXP 	text_3: height = 0.1
+115.0238 	EXP 	text_3: height = 0.1
+115.0238 	EXP 	text_3: height = 0.1
+115.0238 	EXP 	text_3: text = '热情'
+115.0238 	EXP 	text_3: autoDraw = True
+115.8990 	DATA 	Keypress: e
+115.9614 	EXP 	text_3: autoDraw = False
+115.9614 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+115.9614 	EXP 	fb_2: text = 'Correct!'
+115.9614 	EXP 	fb_2: autoDraw = True
+116.9604 	EXP 	New trial (rep=0, index=5): {'Words_t1': '他', 'ans_t1': 'i'}
+116.9934 	EXP 	fb_2: autoDraw = False
+116.9934 	EXP 	fix: autoDraw = True
+117.4935 	INFO 	Keyboard events cleared
+117.4931 	EXP 	fix: autoDraw = False
+117.4931 	EXP 	text_3: height = 0.1
+117.4931 	EXP 	text_3: height = 0.1
+117.4931 	EXP 	text_3: height = 0.1
+117.4931 	EXP 	text_3: text = '他'
+117.4931 	EXP 	text_3: autoDraw = True
+117.9258 	DATA 	Keypress: i
+117.9321 	EXP 	text_3: autoDraw = False
+117.9321 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+117.9321 	EXP 	fb_2: text = 'Correct!'
+117.9321 	EXP 	fb_2: autoDraw = True
+118.9241 	EXP 	New trial (rep=0, index=6): {'Words_t1': '暴躁', 'ans_t1': 'i'}
+118.9544 	EXP 	fb_2: autoDraw = False
+118.9544 	EXP 	fix: autoDraw = True
+119.4562 	INFO 	Keyboard events cleared
+119.4556 	EXP 	fix: autoDraw = False
+119.4556 	EXP 	text_3: height = 0.1
+119.4556 	EXP 	text_3: height = 0.1
+119.4556 	EXP 	text_3: height = 0.1
+119.4556 	EXP 	text_3: text = '暴躁'
+119.4556 	EXP 	text_3: autoDraw = True
+120.9534 	EXP 	text_3: autoDraw = False
+120.9534 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+120.9534 	EXP 	fb_2: text = 'Correct!'
+120.9534 	EXP 	fb_2: autoDraw = True
+121.9257 	EXP 	New trial (rep=0, index=7): {'Words_t1': '虚伪', 'ans_t1': 'i'}
+121.9332 	EXP 	fb_2: autoDraw = False
+121.9332 	EXP 	fix: autoDraw = True
+122.4558 	INFO 	Keyboard events cleared
+122.4554 	EXP 	fix: autoDraw = False
+122.4554 	EXP 	text_3: height = 0.1
+122.4554 	EXP 	text_3: height = 0.1
+122.4554 	EXP 	text_3: height = 0.1
+122.4554 	EXP 	text_3: text = '虚伪'
+122.4554 	EXP 	text_3: autoDraw = True
+123.9706 	EXP 	text_3: autoDraw = False
+123.9706 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+123.9706 	EXP 	fb_2: text = 'Correct!'
+123.9706 	EXP 	fb_2: autoDraw = True
+124.9296 	EXP 	New trial (rep=0, index=8): {'Words_t1': '凶狠', 'ans_t1': 'i'}
+124.9685 	EXP 	fb_2: autoDraw = False
+124.9685 	EXP 	fix: autoDraw = True
+125.4639 	INFO 	Keyboard events cleared
+125.4635 	EXP 	fix: autoDraw = False
+125.4635 	EXP 	text_3: height = 0.1
+125.4635 	EXP 	text_3: height = 0.1
+125.4635 	EXP 	text_3: height = 0.1
+125.4635 	EXP 	text_3: text = '凶狠'
+125.4635 	EXP 	text_3: autoDraw = True
+126.9562 	EXP 	text_3: autoDraw = False
+126.9562 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+126.9562 	EXP 	fb_2: text = 'Correct!'
+126.9562 	EXP 	fb_2: autoDraw = True
+127.9351 	EXP 	New trial (rep=0, index=9): {'Words_t1': '细腻', 'ans_t1': 'e'}
+127.9621 	EXP 	fb_2: autoDraw = False
+127.9621 	EXP 	fix: autoDraw = True
+128.4559 	INFO 	Keyboard events cleared
+128.4555 	EXP 	fix: autoDraw = False
+128.4555 	EXP 	text_3: height = 0.1
+128.4555 	EXP 	text_3: height = 0.1
+128.4555 	EXP 	text_3: height = 0.1
+128.4555 	EXP 	text_3: text = '细腻'
+128.4555 	EXP 	text_3: autoDraw = True
+128.7710 	DATA 	Keypress: i
+128.8315 	EXP 	text_3: autoDraw = False
+128.8315 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+128.8315 	EXP 	fb_2: text = 'Correct!'
+128.8315 	EXP 	fb_2: autoDraw = True
+129.0421 	DATA 	Keypress: i
+129.2012 	DATA 	Keypress: i
+129.3946 	DATA 	Keypress: i
+129.8038 	DATA 	Keypress: i
+129.8302 	EXP 	New trial (rep=0, index=10): {'Words_t1': '稳重', 'ans_t1': 'e'}
+129.8558 	EXP 	fb_2: autoDraw = False
+129.8558 	EXP 	fix: autoDraw = True
+130.3610 	INFO 	Keyboard events cleared
+130.3606 	EXP 	fix: autoDraw = False
+130.3606 	EXP 	text_3: height = 0.1
+130.3606 	EXP 	text_3: height = 0.1
+130.3606 	EXP 	text_3: height = 0.1
+130.3606 	EXP 	text_3: text = '稳重'
+130.3606 	EXP 	text_3: autoDraw = True
+130.3923 	EXP 	text_3: autoDraw = False
+130.3923 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+130.3923 	EXP 	fb_2: text = 'Correct!'
+130.3923 	EXP 	fb_2: autoDraw = True
+130.5782 	DATA 	Keypress: i
+131.3637 	DATA 	Keypress: i
+131.3868 	EXP 	New trial (rep=0, index=11): {'Words_t1': '诚实', 'ans_t1': 'e'}
+131.3996 	EXP 	fb_2: autoDraw = False
+131.3996 	EXP 	fix: autoDraw = True
+131.5687 	DATA 	Keypress: i
+131.7212 	DATA 	Keypress: i
+131.8954 	DATA 	Keypress: i
+131.9173 	INFO 	Keyboard events cleared
+131.9169 	EXP 	fix: autoDraw = False
+131.9169 	EXP 	text_3: height = 0.1
+131.9169 	EXP 	text_3: height = 0.1
+131.9169 	EXP 	text_3: height = 0.1
+131.9169 	EXP 	text_3: text = '诚实'
+131.9169 	EXP 	text_3: autoDraw = True
+131.9324 	EXP 	text_3: autoDraw = False
+131.9324 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+131.9324 	EXP 	fb_2: text = 'Correct!'
+131.9324 	EXP 	fb_2: autoDraw = True
+132.0969 	DATA 	Keypress: i
+132.2549 	DATA 	Keypress: i
+132.5372 	DATA 	Keypress: i
+132.7037 	DATA 	Keypress: i
+132.8994 	DATA 	Keypress: i
+132.9268 	EXP 	New trial (rep=0, index=12): {'Words_t1': '我的', 'ans_t1': 'e'}
+132.9540 	EXP 	fb_2: autoDraw = False
+132.9540 	EXP 	fix: autoDraw = True
+133.1040 	DATA 	Keypress: i
+133.3279 	DATA 	Keypress: i
+133.4567 	INFO 	Keyboard events cleared
+133.4562 	EXP 	fix: autoDraw = False
+133.4562 	EXP 	text_3: height = 0.1
+133.4562 	EXP 	text_3: height = 0.1
+133.4562 	EXP 	text_3: height = 0.1
+133.4562 	EXP 	text_3: text = '我的'
+133.4562 	EXP 	text_3: autoDraw = True
+133.4944 	EXP 	text_3: autoDraw = False
+133.4944 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+133.4944 	EXP 	fb_2: text = 'Correct!'
+133.4944 	EXP 	fb_2: autoDraw = True
+133.5017 	DATA 	Keypress: i
+133.6960 	DATA 	Keypress: i
+134.4688 	EXP 	New trial (rep=0, index=13): {'Words_t1': '他人', 'ans_t1': 'i'}
+134.4928 	EXP 	fb_2: autoDraw = False
+134.4928 	EXP 	fix: autoDraw = True
+135.0214 	INFO 	Keyboard events cleared
+135.0209 	EXP 	fix: autoDraw = False
+135.0209 	EXP 	text_3: height = 0.1
+135.0209 	EXP 	text_3: height = 0.1
+135.0209 	EXP 	text_3: height = 0.1
+135.0209 	EXP 	text_3: text = '他人'
+135.0209 	EXP 	text_3: autoDraw = True
+135.0514 	EXP 	text_3: autoDraw = False
+135.0514 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+135.0514 	EXP 	fb_2: text = 'Correct!'
+135.0514 	EXP 	fb_2: autoDraw = True
+136.0292 	EXP 	New trial (rep=0, index=14): {'Words_t1': '轻率', 'ans_t1': 'i'}
+136.0599 	EXP 	fb_2: autoDraw = False
+136.0599 	EXP 	fix: autoDraw = True
+136.5646 	INFO 	Keyboard events cleared
+136.5641 	EXP 	fix: autoDraw = False
+136.5641 	EXP 	text_3: height = 0.1
+136.5641 	EXP 	text_3: height = 0.1
+136.5641 	EXP 	text_3: height = 0.1
+136.5641 	EXP 	text_3: text = '轻率'
+136.5641 	EXP 	text_3: autoDraw = True
+137.9992 	DATA 	Keypress: e
+138.0279 	EXP 	text_3: autoDraw = False
+138.0279 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+138.0279 	EXP 	fb_2: text = 'Correct!'
+138.0279 	EXP 	fb_2: autoDraw = True
+139.0029 	EXP 	New trial (rep=0, index=15): {'Words_t1': '冒失', 'ans_t1': 'i'}
+139.0294 	EXP 	fb_2: autoDraw = False
+139.0294 	EXP 	fix: autoDraw = True
+139.5320 	INFO 	Keyboard events cleared
+139.5317 	EXP 	fix: autoDraw = False
+139.5317 	EXP 	text_3: height = 0.1
+139.5317 	EXP 	text_3: height = 0.1
+139.5317 	EXP 	text_3: height = 0.1
+139.5317 	EXP 	text_3: text = '冒失'
+139.5317 	EXP 	text_3: autoDraw = True
+140.0340 	DATA 	Keypress: i
+140.0693 	EXP 	text_3: autoDraw = False
+140.0693 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+140.0693 	EXP 	fb_2: text = 'Correct!'
+140.0693 	EXP 	fb_2: autoDraw = True
+141.0684 	EXP 	New trial (rep=0, index=16): {'Words_t1': '消极', 'ans_t1': 'i'}
+141.0953 	EXP 	fb_2: autoDraw = False
+141.0953 	EXP 	fix: autoDraw = True
+141.5724 	INFO 	Keyboard events cleared
+141.5718 	EXP 	fix: autoDraw = False
+141.5718 	EXP 	text_3: height = 0.1
+141.5718 	EXP 	text_3: height = 0.1
+141.5718 	EXP 	text_3: height = 0.1
+141.5718 	EXP 	text_3: text = '消极'
+141.5718 	EXP 	text_3: autoDraw = True
+143.0961 	EXP 	text_3: autoDraw = False
+143.0961 	EXP 	fb_2: foreColor = <psychopy.colors.Color: green, alpha=1.0>
+143.0961 	EXP 	fb_2: text = 'Correct!'
+143.0961 	EXP 	fb_2: autoDraw = True
+143.5438 	DATA 	Keypress: escape
+143.6916 	EXP 	IAT(test03): status = STOPPED
+143.7216 	EXP 	fb_2: autoDraw = False
+143.7243 	EXP 	IAT(test03): status = STOPPED
+143.7436 	INFO 	saved data to 'D:\\GitHub_programe\\GitHub\\Psychopy\\IAT\\data/1_IAT(test03)_2024-07-05_14h22.35.003.csv'
+143.7451 	INFO 	saved data to D:\GitHub_programe\GitHub\Psychopy\IAT\data/1_IAT(test03)_2024-07-05_14h22.35.003.psydat
+143.8485 	EXP 	window1: mouseVisible = True
+144.1536 	DEBUG 	Saving data for IAT(test03) ExperimentHandler

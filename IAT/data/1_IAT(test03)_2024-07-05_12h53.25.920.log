@@ -1,0 +1,108 @@
+6.2543 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+6.2714 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+6.3771 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+6.3922 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+8.6009 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+8.6015 	INFO 	Loaded monitor calibration from ['2024_05_29 09:31']
+9.2858 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B47A816850>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B47A8167F0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B47A816640>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002B47AB3D3D0>, multiSample=False, name='window1', numSamples=2, pos=[880.0, 420.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.2859 	EXP 	window1: mouseVisible = True
+9.2859 	EXP 	window1: backgroundImage = ''
+9.2860 	EXP 	window1: backgroundFit = 'none'
+9.2861 	EXP 	window1: mouseVisible = True
+9.2863 	EXP 	window1: mouseVisible = True
+9.2883 	EXP 	window1: mouseVisible = True
+9.2891 	EXP 	window1: mouseVisible = True
+9.2943 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2953 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2964 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2975 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2986 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2994 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3001 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3015 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3024 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3034 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3057 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3067 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3081 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3092 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3100 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3104 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.3143 	DEBUG 	Upload of Texture Font fontname complete
+9.3159 	EXP 	window1: mouseVisible = True
+9.3161 	EXP 	window1: mouseVisible = True
+9.3168 	EXP 	window1: mouseVisible = True
+9.3173 	EXP 	window1: mouseVisible = True
+9.3213 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3229 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3246 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3260 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3263 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.3277 	DEBUG 	Upload of Texture Font fontname complete
+9.3297 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.3297 	EXP 	window1: recordFrameIntervals = False
+9.7075 	EXP 	window1: recordFrameIntervals = True
+9.7598 	WARNING 	t of last frame was 24.88ms (=1/40)
+9.7976 	WARNING 	t of last frame was 27.02ms (=1/37)
+9.8238 	WARNING 	t of last frame was 26.29ms (=1/38)
+9.8691 	WARNING 	t of last frame was 32.39ms (=1/30)
+9.9057 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+11.5798 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.5800 	EXP 	window1: mouseVisible = False
+11.5804 	EXP 	window1: mouseVisible = True
+11.5806 	EXP 	window1: mouseVisible = True
+11.5812 	EXP 	window1: mouseVisible = True
+11.5819 	EXP 	window1: mouseVisible = True
+11.5854 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5865 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5878 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5890 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5901 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5911 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5922 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5933 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5945 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5959 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5976 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5995 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+11.5999 	DEBUG 	Uploading Texture Font fontname to graphics card
+11.6007 	DEBUG 	Upload of Texture Font fontname complete
+11.6022 	EXP 	window1: mouseVisible = True
+11.6024 	EXP 	window1: mouseVisible = True
+11.6030 	EXP 	window1: mouseVisible = True
+11.6036 	EXP 	window1: mouseVisible = True
+11.6567 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+15.9701 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9702 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9702 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9703 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9703 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9703 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9703 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9703 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9704 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9704 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9704 	INFO 	keyboard.Keyboard is using iohub backend.
+15.9704 	EXP 	IAT(test03): status = STARTED
+15.9711 	EXP 	window1: mouseVisible = True
+16.0159 	EXP 	Created Instruction_01 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction01.png', interpolate=True, mask=None, maskParams=None, name='Instruction_01', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+16.0161 	EXP 	window1: mouseVisible = True
+16.0463 	EXP 	Created Instruction_02 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction02.png', interpolate=True, mask=None, maskParams=None, name='Instruction_02', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+16.0466 	EXP 	window1: mouseVisible = True
+16.1224 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+16.1229 	EXP 	window1: mouseVisible = True
+16.1244 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.1245 	EXP 	window1: mouseVisible = True
+16.1255 	EXP 	Created fb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.1256 	EXP 	window1: mouseVisible = True
+16.1572 	EXP 	Created Instruction_03 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='picture/Instruction03.png', interpolate=True, mask=None, maskParams=None, name='Instruction_03', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([2., 1.]), texRes=128.0, units='height', win=Window(...))
+16.1574 	EXP 	window1: mouseVisible = True
+16.1601 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+16.2511 	EXP 	window1: mouseVisible = True
+16.2541 	DEBUG 	Saving data for IAT(test03) ExperimentHandler
+16.2547 	INFO 	saved data to D:\GitHub_programe\GitHub\Psychopy\IAT\data/1_IAT(test03)_2024-07-05_12h53.25.920.psydat
+16.2551 	INFO 	saved data to 'D:\\GitHub_programe\\GitHub\\Psychopy\\IAT\\data/1_IAT(test03)_2024-07-05_12h53.25.920.csv'
