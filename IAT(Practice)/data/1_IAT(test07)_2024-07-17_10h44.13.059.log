@@ -1,0 +1,14 @@
+7.3297 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+7.3371 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+7.4649 	WARNING 	Font Manager failed to load file C:\Users\蔡振辛\AppData\Local\Microsoft\Windows\Fonts\th.ttf
+7.4734 	WARNING 	Font Manager failed to load file C:\Windows\Fonts\mstmc.ttf
+10.0956 	WARNING 	User requested fullscreen with size [1707  960], but screen is actually [2560, 1440]. Using actual size
+11.4373 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+0.3703 	WARNING 	t of last frame was 20.26ms (=1/49)
+0.4074 	WARNING 	t of last frame was 20.55ms (=1/48)
+0.5173 	WARNING 	t of last frame was 21.37ms (=1/46)
+1.4083 	WARNING 	t of last frame was 180.25ms (=1/5)
+1.4655 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
