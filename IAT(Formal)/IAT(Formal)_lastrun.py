@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.1.4),
-    on 七月 17, 2024, at 10:47
+    on 八月 22, 2024, at 14:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -727,19 +727,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=-1.0);
     
     # --- Initialize components for Routine "End" ---
-    text_norm = visual.TextStim(win=win, name='text_norm',
-        text='感谢参与实验\n祝生活愉快！\n\n按空格结束实验',
-        font='Arial',
-        units='norm', pos=(0.7, -0.10), height=0.1, wrapWidth=1.8, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
+    Ending = visual.ImageStim(
+        win=win,
+        name='Ending', 
+        image='picture/End.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0), size=(2, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
     key_instruct = keyboard.Keyboard(deviceName='key_instruct')
-    # Run 'Begin Experiment' code from text_align
-    # Code components should usually appear at the top
-    # of the routine. This one has to appear after the
-    # text component it refers to.
-    text_norm.alignText= 'left'
     
     # create some handy timers
     
@@ -4568,7 +4564,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_instruct.rt = []
     _key_instruct_allKeys = []
     # keep track of which components have finished
-    EndComponents = [text_norm, key_instruct]
+    EndComponents = [Ending, key_instruct]
     for thisComponent in EndComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -4591,21 +4587,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_norm* updates
+        # *Ending* updates
         
-        # if text_norm is starting this frame...
-        if text_norm.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if Ending is starting this frame...
+        if Ending.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_norm.frameNStart = frameN  # exact frame index
-            text_norm.tStart = t  # local t and not account for scr refresh
-            text_norm.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_norm, 'tStartRefresh')  # time at next scr refresh
+            Ending.frameNStart = frameN  # exact frame index
+            Ending.tStart = t  # local t and not account for scr refresh
+            Ending.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Ending, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'Ending.started')
             # update status
-            text_norm.status = STARTED
-            text_norm.setAutoDraw(True)
+            Ending.status = STARTED
+            Ending.setAutoDraw(True)
         
-        # if text_norm is active this frame...
-        if text_norm.status == STARTED:
+        # if Ending is active this frame...
+        if Ending.status == STARTED:
             # update params
             pass
         
