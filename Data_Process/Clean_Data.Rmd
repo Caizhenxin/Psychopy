@@ -1,0 +1,60 @@
+---
+title: "Data_Process"
+author: "czx"
+date: "2024-09-05"
+output: html_document
+root_dir: "D:/GitHub_programe/GitHub/Psychopy/Data_Process"
+---
+
+## 1.首先将数据整合，并且添加Subject编号
+
+```{r}
+# 加载dplyr包
+library(dplyr)
+
+# 记录原始工作目录
+original_dir <- getwd()
+
+# 设置工作目录为当前目录下的PsychoPY文件夹
+setwd(paste0(getwd(), "/PsychoPY"))
+
+# 获取PsychoPY目录下所有的.csv文件
+files <- list.files(pattern = "*.csv")
+
+# 遍历文件列表
+for (file in files) {
+  # 读取CSV文件
+  data <- read.csv(file)
+  
+  # 为数据框添加Subject列，值为文件名
+  data$Subject <- sub("\\.csv$", "", file)
+  
+  # 选择特定的列进行分析
+  selected_columns <- c("Words_t1", "ans_t1", "key_resp_t1.corr", "key_resp_t1.rt", "Words_t2", "ans_t2", "key_resp_t2.corr", "key_resp_t2.rt", "Subject")
+  selected_data <- data[, selected_columns, drop = FALSE]
+  
+  # 删除同时为NA的行
+  selected_data <- selected_data %>%
+    filter(!is.na(key_resp_t1.corr) | !is.na(key_resp_t1.rt) | !is.na(key_resp_t2.corr) | !is.na(key_resp_t2.rt))
+  
+  # 构建新的文件路径，写入Selected文件夹
+  new_file_path <- paste0("../Selected/", sub("\\.csv$", "", file), "_selected.csv")
+  
+  # 将选择后的数据写入新的CSV文件
+  write.csv(selected_data, new_file_path, row.names = FALSE)
+}
+
+# 恢复原始工作目录
+setwd(original_dir)
+rm(data,selected_data,file,files,new_file_path,original_dir,selected_columns)
+```
+
+## 2.计算数据的d'
+
+```{r}
+
+
+
+```
+
+
