@@ -3,7 +3,7 @@ title: "Data_Process"
 author: "czx"
 date: "2024-09-05"
 output: html_document
-root_dir: "D:/GitHub_programe/GitHub/Psychopy/Data_Process"
+# root_dir: "D:/GitHub_programe/GitHub/Psychopy/Data_Process"
 ---
 
 ## 1.首先将数据整合，并且添加Subject编号
@@ -49,11 +49,104 @@ setwd(original_dir)
 rm(data,selected_data,file,files,new_file_path,original_dir,selected_columns)
 ```
 
-## 2.计算数据的d'
+## 2.再将数据整合至同一行
 
 ```{r}
+# 导入必要的库
+library(dplyr)
+library(readr)
 
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
 
+# 创建Clean_Data文件夹，如果不存在的话
+if (!dir.exists(clean_data_folder)) {
+  dir.create(clean_data_folder)
+}
+
+# 获取Selected文件夹下的所有CSV文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 遍历每一个CSV文件进行处理
+for (file in csv_files) {
+  # 读取CSV文件
+  data <- read_csv(file)
+  
+  # 合并Words_t1和Words_t2的变量
+  processed_data <- data %>%
+    mutate(
+      Words_t1 = coalesce(Words_t1, Words_t2),
+      ans_t1 = coalesce(ans_t1, ans_t2),
+      key_resp_t1_corr = coalesce(key_resp_t1.corr, key_resp_t2.corr),
+      key_resp_t1_rt = coalesce(key_resp_t1.rt, key_resp_t2.rt)
+    ) %>%
+    select(Subject, Words_t1, ans_t1, key_resp_t1_corr, key_resp_t1_rt) %>%
+    distinct()
+
+  # 生成新的文件名并将其保存在Clean_Data文件夹中
+  new_file_name <- paste0(clean_data_folder, "/", basename(file))
+  write_csv(processed_data, new_file_name)
+}
+
+```
+
+## 3.计算数据的d'  ~~
+
+```{r}
+# 加载 data.table 包
+library(data.table)
+
+calculate_d_prime <- function(rt1, rt2, acc1, acc2) {
+  # 计算每个条件下的平均RT和标准偏差
+  mean_rt1 <- mean(rt1, na.rm = TRUE)
+  sd_rt1 <- sd(rt1, na.rm = TRUE)
+  mean_rt2 <- mean(rt2, na.rm = TRUE)
+  sd_rt2 <- sd(rt2, na.rm = TRUE)
+  
+  # 计算合并标准偏差
+  n1 <- length(rt1)
+  n2 <- length(rt2)
+  sd_pooled <- sqrt(((n1 - 1) * sd_rt1^2 + (n2 - 1) * sd_rt2^2) / (n1 + n2 - 2))
+  
+  # 计算d'值
+  d_prime <- (mean_rt1 - mean_rt2) / sd_pooled
+  
+  return(d_prime)
+}
+
+# 列出文件夹中的所有 CSV 文件
+files <- list.files("Clean_Data", pattern = "\\.csv$", full.names = TRUE)
+
+# 初始化一个列表来存储d'值
+d_prime_list <- list()
+
+# 遍历每个文件
+for (file in files) {
+  # 读取数据
+  data <- fread(file)
+  
+  # 提取RT和ACC数据
+  rt1 <- data$key_resp_t1.rt
+  rt2 <- data$key_resp_t2.rt
+  acc1 <- data$key_resp_t1.corr
+  acc2 <- data$key_resp_t2.corr
+  
+  # 计算d'值
+  d_prime <- calculate_d_prime(rt1, rt2, acc1, acc2)
+  
+  # 将结果存储在列表中
+  d_prime_list[[file]] <- data.frame(
+    file = file,
+    d_prime = d_prime
+  )
+}
+
+# 合并所有数据框
+d_prime_df <- do.call(rbind, d_prime_list)
+
+# 写入CSV文件
+write.csv(d_prime_df, "d_prime_results.csv", row.names = FALSE)
 
 ```
 
