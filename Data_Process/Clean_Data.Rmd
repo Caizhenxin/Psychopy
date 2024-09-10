@@ -151,3 +151,66 @@ write.csv(d_prime_df, "d_prime_results.csv", row.names = FALSE)
 ```
 
 
+
+## 3.计算数据的d'  ~~~
+
+```{r}
+# 导入必要的库
+library(dplyr)
+library(readr)
+library(purrr)
+
+# 计算z分数函数
+z_score <- function(p) {
+  # 处理边界情况：避免概率为0或1的情况
+  p <- ifelse(p == 0, 1e-5, ifelse(p == 1, 1 - 1e-5, p))
+  return(qnorm(p))
+}
+
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
+
+# 获取Selected文件夹下的所有CSV文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 初始化一个空的数据框来存储每个被试的d'值
+d_prime_results <- data.frame(Subject = character(), d_prime = numeric(), stringsAsFactors = FALSE)
+
+# 遍历每一个CSV文件进行处理
+for (file in csv_files) {
+  # 读取CSV文件
+  data <- read_csv(file)
+  
+  # 确保Subject列为字符型
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  # 计算每个被试的命中率和假警报率
+  subject_d_prime <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      hit_rate = mean(key_resp_t1.corr, na.rm = TRUE),       # Good me, Bad Other 对应命中率
+      false_alarm_rate = mean(key_resp_t2.corr, na.rm = TRUE)  # Bad me, Good Other 对应假警报率
+    ) %>%
+    mutate(
+      # 计算每个被试的d'
+      d_prime = z_score(hit_rate) - z_score(false_alarm_rate)
+    ) %>%
+    select(Subject, d_prime)
+  
+  # 将结果合并到总结果数据框中
+  d_prime_results <- bind_rows(d_prime_results, subject_d_prime)
+}
+
+# 按Subject排序
+d_prime_results <- d_prime_results %>% arrange(Subject)
+
+# 将结果保存到CSV文件中
+write_csv(d_prime_results, paste0(clean_data_folder, "/d_prime_results.csv"))
+
+# 输出d_prime_results以供查看
+print(d_prime_results)
+
+
+```
