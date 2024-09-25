@@ -88,7 +88,7 @@ for (file in csv_files) {
   new_file_name <- paste0(clean_data_folder, "/", basename(file))
   write_csv(processed_data, new_file_name)
 }
-
+rm(clean_data_folder,csv_files,file,new_file_name,selected_folder)
 ```
 
 ## 3.计算数据的d'  ~~
@@ -212,5 +212,278 @@ write_csv(d_prime_results, paste0(clean_data_folder, "/d_prime_results.csv"))
 # 输出d_prime_results以供查看
 print(d_prime_results)
 
+
+```
+
+
+## Compute d' in two condition(Goodme,BadOhter;Badme,GoodOthers)
+
+```{r error=FALSE}
+# 导入必要的库
+library(dplyr)
+library(readr)
+library(purrr)
+
+# 计算z分数函数
+z_score <- function(p) {
+  # 处理边界情况：避免概率为0或1的情况
+  p <- ifelse(p == 0, 1e-5, ifelse(p == 1, 1 - 1e-5, p))
+  return(qnorm(p))
+}
+
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
+
+# 获取Selected文件夹下的所有CSV文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 初始化一个空的数据框来存储每个被试的d'值
+d_prime_results <- data.frame(Subject = character(), 
+                              d_prime_goodme_badothers = numeric(), 
+                              d_prime_badme_goodothers = numeric(), 
+                              stringsAsFactors = FALSE)
+
+# 遍历每一个CSV文件进行处理
+for (file in csv_files) {
+  # 读取CSV文件
+  data <- read_csv(file)
+  
+  # 确保Subject列为字符型
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  # 计算每个被试在Goodme, BadOthers条件下的d'
+  subject_d_prime_goodme_badothers <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      hit_rate = mean(key_resp_t1.corr, na.rm = TRUE),       # Goodme, BadOthers 对应命中率
+      false_alarm_rate = 1 - mean(key_resp_t1.corr, na.rm = TRUE)  # Goodme, BadOthers 对应假警报率为1 - 命中率
+    ) %>%
+    mutate(
+      d_prime_goodme_badothers = z_score(hit_rate) - z_score(false_alarm_rate)
+    ) %>%
+    select(Subject, d_prime_goodme_badothers)
+  
+  # 计算每个被试在Badme, GoodOthers条件下的d'
+  subject_d_prime_badme_goodothers <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      hit_rate = mean(key_resp_t2.corr, na.rm = TRUE),       # Badme, GoodOthers 对应命中率
+      false_alarm_rate = 1 - mean(key_resp_t2.corr, na.rm = TRUE)  # Badme, GoodOthers 对应假警报率为1 - 命中率
+    ) %>%
+    mutate(
+      d_prime_badme_goodothers = z_score(hit_rate) - z_score(false_alarm_rate)
+    ) %>%
+    select(Subject, d_prime_badme_goodothers)
+  
+  # 合并两个条件下的d'结果
+  subject_d_prime <- left_join(subject_d_prime_goodme_badothers, 
+                               subject_d_prime_badme_goodothers, 
+                               by = "Subject")
+  
+  # 将结果合并到总结果数据框中
+  d_prime_results <- bind_rows(d_prime_results, subject_d_prime)
+}
+
+# 按Subject排序
+d_prime_results <- d_prime_results %>% arrange(Subject)
+
+# 将结果保存到CSV文件中
+write_csv(d_prime_results, paste0(clean_data_folder, "/d_prime_results.csv"))
+
+# 输出d_prime_results以供查看
+print(d_prime_results)
+
+# rm(clean_data_folder,csv_files,file,selected_folder,z_score,subject_d_prime)
+```
+
+## Darw Pci Trial
+
+### v1
+```{r}
+# 导入必要的库
+library(ggplot2)
+
+# 假设d_prime_results是之前代码生成的数据框
+# 绘制条形图，展示两个条件下的d'值
+ggplot(d_prime_results, aes(x = Subject, y = d_prime_goodme_badothers, fill = "Goodme, BadOthers")) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  geom_bar(aes(y = d_prime_badme_goodothers, fill = "Badme, GoodOthers"), 
+           stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  labs(title = "d' Comparison between Conditions", 
+       x = "Subject", 
+       y = "d' Value") +
+  scale_fill_manual(values = c("Goodme, BadOthers" = "blue", "Badme, GoodOthers" = "red")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+# 如果你的数据有误差，需要绘制误差线，可以使用geom_errorbar
+# 假设你有标准误或标准差数据
+# geom_errorbar(aes(ymin = d_prime - error, ymax = d_prime + error), width = 0.2, position = position_dodge(width = 0.8))
+
+```
+
+### v2
+```{r}
+# 计算两个条件下的平均 d' 值
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = mean(d_prime_goodme_badothers, na.rm = TRUE),
+    mean_d_prime_badme_goodothers = mean(d_prime_badme_goodothers, na.rm = TRUE)
+  ) %>%
+  gather(key = "Condition", value = "mean_d_prime")
+
+# 导入必要的库
+library(ggplot2)
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = 0.7) +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("mean_d_prime_goodme_badothers" = "blue", 
+                               "mean_d_prime_badme_goodothers" = "red")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+
+```
+
+## v3
+```{r}
+# 计算两个条件下的平均 d' 值
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = mean(d_prime_goodme_badothers, na.rm = TRUE),
+    mean_d_prime_badme_goodothers = mean(d_prime_badme_goodothers, na.rm = TRUE)
+  ) %>%
+  gather(key = "Condition", value = "mean_d_prime")
+
+# 进行t检验
+t_test_result <- t.test(d_prime_results$d_prime_goodme_badothers, 
+                         d_prime_results$d_prime_badme_goodothers)
+
+# 计算d'差异
+mean_difference <- t_test_result$estimate[1] - t_test_result$estimate[2]
+
+# 导入必要的库
+library(ggplot2)
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = 0.7, position = "dodge") +
+  geom_hline(yintercept = mean_difference, linetype = "dashed", color = "black") +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("mean_d_prime_goodme_badothers" = "gray50", 
+                                "mean_d_prime_badme_goodothers" = "gray30")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+
+```
+
+## v4
+```{r}
+# 计算两个条件下的平均 d' 值
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = mean(d_prime_goodme_badothers, na.rm = TRUE),
+    mean_d_prime_badme_goodothers = mean(d_prime_badme_goodothers, na.rm = TRUE)
+  ) %>%
+  gather(key = "Condition", value = "mean_d_prime")
+
+# 进行t检验
+t_test_result <- t.test(d_prime_results$d_prime_goodme_badothers, 
+                         d_prime_results$d_prime_badme_goodothers)
+
+# 获取t值和p值
+t_value <- t_test_result$statistic
+p_value <- t_test_result$p.value
+
+# 计算d'差异
+mean_difference <- t_test_result$estimate[1] - t_test_result$estimate[2]
+
+# 导入必要的库
+library(ggplot2)
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = 0.7, position = "dodge") +
+  geom_hline(yintercept = mean_difference, linetype = "dashed", color = "black") +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("mean_d_prime_goodme_badothers" = "gray50", 
+                                "mean_d_prime_badme_goodothers" = "gray30")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  annotate("text", x = 1.5, y = max(mean_d_prime$mean_d_prime) + 0.1, 
+           label = ifelse(p_value < 0.05, "*", ""), size = 6)
+
+# 输出t值和p值
+print(paste("t-value:", round(t_value, 3)))
+print(paste("p-value:", round(p_value, 3)))
+
+
+
+```
+
+
+
+## v5
+```{r}
+# 计算两个条件下的平均 d' 值
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = mean(d_prime_goodme_badothers, na.rm = TRUE),
+    mean_d_prime_badme_goodothers = mean(d_prime_badme_goodothers, na.rm = TRUE)
+  ) %>%
+  gather(key = "Condition", value = "mean_d_prime")
+
+# 进行t检验
+t_test_result <- t.test(d_prime_results$d_prime_goodme_badothers, 
+                         d_prime_results$d_prime_badme_goodothers)
+
+# 获取t值和p值
+t_value <- t_test_result$statistic
+p_value <- t_test_result$p.value
+
+# 计算d'差异
+mean_difference <- t_test_result$estimate[1] - t_test_result$estimate[2]
+
+# 导入必要的库
+library(ggplot2)
+
+# 设置柱状图的粗细
+bar_width <- 0.5
+
+# 计算y轴的最大值用于标记
+y_max <- max(mean_d_prime$mean_d_prime) + 0.2
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = bar_width, position = "dodge") +
+  geom_hline(yintercept = mean_difference, linetype = "dashed", color = "black") +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("mean_d_prime_goodme_badothers" = "gray50", 
+                                "mean_d_prime_badme_goodothers" = "gray30")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  annotate("text", x = 1.5, y = y_max - 0.1, 
+           label = ifelse(p_value < 0.05, "*", ""), size = 6) +
+  # 添加括号
+  geom_segment(aes(x = 1, xend = 1, y = y_max - 0.1, yend = y_max), color = "black") +
+  geom_segment(aes(x = 2, xend = 2, y = y_max - 0.1, yend = y_max), color = "black") +
+  geom_segment(aes(x = 1, xend = 2, y = y_max, yend = y_max), color = "black")
+
+# 输出t值和p值
+print(paste("t-value:", round(t_value, 3)))
+print(paste("p-value:", round(p_value, 3)))
 
 ```

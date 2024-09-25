@@ -1,0 +1,7 @@
+Practice_ipn means “Identify Positive and Negative"
+
+Practice_ipn_reverse means "reverse Postive and Negative Procedure"
+
+Practice_iso means "Identify Self and Others"
+
+Practice_iso_reverse means "reverse Self and Others Procedure"
