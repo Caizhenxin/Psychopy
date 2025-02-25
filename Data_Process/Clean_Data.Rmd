@@ -299,7 +299,6 @@ print(d_prime_results)
 ```
 
 ## Darw Pci Trial
-
 ### v1
 ```{r}
 # 导入必要的库
