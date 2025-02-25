@@ -432,8 +432,6 @@ print(paste("p-value:", round(p_value, 3)))
 
 ```
 
-
-
 ## v5
 ```{r}
 # 导入必要的库
@@ -489,7 +487,6 @@ print(paste("t-value:", round(t_value, 3)))
 print(paste("p-value:", round(p_value, 3)))
 
 ```
-
 
 ## v6
 ```{r}
@@ -556,7 +553,6 @@ print(paste("t-value:", round(t_value, 3)))
 print(paste("p-value:", round(p_value, 3)))
 
 ```
-
 
 ## v7
 ```{r}
