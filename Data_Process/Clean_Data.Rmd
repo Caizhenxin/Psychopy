@@ -601,14 +601,14 @@ mean_difference <- max(0, mean_difference)  # 将负值调整为0
 # 绘制整体的条形图
 ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
   geom_bar(stat = "identity", width = bar_width, position = "dodge") +
-  geom_hline(yintercept = mean_difference, linetype = "dashed", color = "black") +
+  #geom_hline(yintercept = mean_difference, linetype = "dashed", color = "black") +
   labs(title = "Average d' Comparison between Conditions",
        x = "Condition",
        y = "Average d' Value") +
   scale_fill_manual(values = c("mean_d_prime_goodme_badothers" = "gray50", 
                                 "mean_d_prime_badme_goodothers" = "gray30")) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, hjust = 0.5)) +
+  theme(axis.text.x = element_text(angle = 1, hjust = 0.5)) +
   annotate("text", x = 1.5, y = y_max - 0.1, 
            label = ifelse(p_value < 0.05, "*", ""), size = 6) +
   # 添加括号
@@ -625,3 +625,154 @@ print(paste("t-value:", round(t_value, 3)))
 print(paste("p-value:", round(p_value, 3)))
 
 ```
+
+## v8
+```{r}
+# 导入必要的库
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(stringr)
+
+# 计算两个条件下的平均 d' 值及其标准误
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = mean(d_prime_goodme_badothers, na.rm = TRUE),
+    mean_d_prime_badme_goodothers = mean(d_prime_badme_goodothers, na.rm = TRUE),
+    se_goodme_badothers = sd(d_prime_goodme_badothers, na.rm = TRUE) / sqrt(sum(!is.na(d_prime_goodme_badothers))),
+    se_badme_goodothers = sd(d_prime_badme_goodothers, na.rm = TRUE) / sqrt(sum(!is.na(d_prime_badme_goodothers)))
+  ) %>%
+  pivot_longer(
+    cols = starts_with("mean_d_prime"),
+    names_to = "Condition",
+    values_to = "mean_d_prime"
+  ) %>%
+  mutate(
+    se = case_when(
+      Condition == "mean_d_prime_goodme_badothers" ~ se_goodme_badothers,
+      Condition == "mean_d_prime_badme_goodothers" ~ se_badme_goodothers
+    ),
+    Condition = str_replace(Condition, "mean_d_prime_", "")  # 简化标签
+  )
+
+# 进行 t 检验
+t_test_result <- t.test(d_prime_results$d_prime_goodme_badothers, 
+                         d_prime_results$d_prime_badme_goodothers)
+
+# 获取 t 值和 p 值
+t_value <- t_test_result$statistic
+p_value <- t_test_result$p.value
+
+# 计算 d' 差异
+mean_difference <- t_test_result$estimate[1] - t_test_result$estimate[2]
+
+# 输出 mean_difference 以供调试
+print(paste("Mean difference:", round(mean_difference, 3)))
+
+# 设置柱状图的宽度
+bar_width <- 0.5
+
+# 计算 y 轴的最大值用于标记
+y_max <- max(mean_d_prime$mean_d_prime + mean_d_prime$se) + 0.2
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = bar_width, position = "dodge") +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("goodme_badothers" = "gray50", 
+                                "badme_goodothers" = "gray30")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 1, hjust = 0.5)) +
+  # 添加星号（p < 0.05）并放在横线上方
+  annotate("text", x = 1.5, y = y_max + 0.05, 
+           label = ifelse(p_value < 0.05, "*", ""), size = 6) +
+  # 添加括号
+  geom_segment(aes(x = 1, xend = 1, y = y_max - 0.05, yend = y_max), color = "black") +
+  geom_segment(aes(x = 2, xend = 2, y = y_max - 0.05, yend = y_max), color = "black") +
+  geom_segment(aes(x = 1, xend = 2, y = y_max, yend = y_max), color = "black") +
+  # 添加误差线
+  geom_errorbar(aes(ymin = mean_d_prime - se, ymax = mean_d_prime + se), 
+                width = 0.2, position = position_dodge(0.5), color = "black")
+
+# 输出 t 值和 p 值
+print(paste("t-value:", round(t_value, 3)))
+print(paste("p-value:", round(p_value, 3)))
+
+```
+
+## v8.1
+```{r}
+# 导入必要的库
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(stringr)
+
+# 计算两个条件下的平均 d' 值及其标准误
+mean_d_prime <- d_prime_results %>%
+  summarize(
+    mean_d_prime_goodme_badothers = round(mean(d_prime_goodme_badothers, na.rm = TRUE), 3),
+    mean_d_prime_badme_goodothers = round(mean(d_prime_badme_goodothers, na.rm = TRUE), 3),
+    se_goodme_badothers = round(sd(d_prime_goodme_badothers, na.rm = TRUE) / sqrt(sum(!is.na(d_prime_goodme_badothers))), 3),
+    se_badme_goodothers = round(sd(d_prime_badme_goodothers, na.rm = TRUE) / sqrt(sum(!is.na(d_prime_badme_goodothers))), 3)
+  ) %>%
+  pivot_longer(
+    cols = starts_with("mean_d_prime"),
+    names_to = "Condition",
+    values_to = "mean_d_prime"
+  ) %>%
+  mutate(
+    se = case_when(
+      Condition == "mean_d_prime_goodme_badothers" ~ se_goodme_badothers,
+      Condition == "mean_d_prime_badme_goodothers" ~ se_badme_goodothers
+    ),
+    Condition = str_replace(Condition, "mean_d_prime_", "")  # 简化标签
+  )
+
+# 进行 t 检验
+t_test_result <- t.test(d_prime_results$d_prime_goodme_badothers, 
+                         d_prime_results$d_prime_badme_goodothers)
+
+# 获取 t 值和 p 值，并保留三位小数
+t_value <- round(t_test_result$statistic, 3)
+p_value <- round(t_test_result$p.value, 3)
+
+# 计算 d' 差异，并保留三位小数
+mean_difference <- round(t_test_result$estimate[1] - t_test_result$estimate[2], 3)
+
+# 输出调试信息
+print(paste("Mean difference:", mean_difference))
+print(paste("t-value:", t_value))
+print(paste("p-value:", p_value))
+
+# 设置柱状图的宽度
+bar_width <- 0.5
+
+# 计算 y 轴的最大值用于标记
+y_max <- max(mean_d_prime$mean_d_prime + mean_d_prime$se) + 0.2
+
+# 绘制整体的条形图
+ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
+  geom_bar(stat = "identity", width = bar_width, position = "dodge") +
+  labs(title = "Average d' Comparison between Conditions",
+       x = "Condition",
+       y = "Average d' Value") +
+  scale_fill_manual(values = c("goodme_badothers" = "gray50", 
+                                "badme_goodothers" = "gray30")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 1, hjust = 0.5)) +
+  # 添加星号（p < 0.05）并放在横线上方
+  annotate("text", x = 1.5, y = y_max + 0.05, 
+           label = ifelse(p_value < 0.05, "*", ""), size = 6) +
+  # 添加括号
+  geom_segment(aes(x = 1, xend = 1, y = y_max - 0.05, yend = y_max), color = "black") +
+  geom_segment(aes(x = 2, xend = 2, y = y_max - 0.05, yend = y_max), color = "black") +
+  geom_segment(aes(x = 1, xend = 2, y = y_max, yend = y_max), color = "black") +
+  # 添加误差线
+  geom_errorbar(aes(ymin = mean_d_prime - se, ymax = mean_d_prime + se), 
+                width = 0.2, position = position_dodge(0.5), color = "black")
+
+```
+
