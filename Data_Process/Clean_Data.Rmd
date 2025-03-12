@@ -861,3 +861,240 @@ ggplot(mean_d_prime, aes(x = Condition, y = mean_d_prime, fill = Condition)) +
 
 ```
 
+
+# Compute SPE(Use ACC and RT)
+```{r}
+# 加载必要的库
+library(dplyr)
+library(readr)
+library(tidyr)
+
+# 读取已分类数据
+clean_data_folder <- "Clean_Data"
+csv_files <- list.files(clean_data_folder, pattern = "*.csv", full.names = TRUE)
+
+# 存储所有被试的计算结果
+spe_results <- list()
+
+# 遍历每个文件进行计算
+for (file in csv_files) {
+  data <- read_csv(file)
+  
+  # 确保数据格式正确
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  
+  # 计算整体自我优势效应
+  spe_overall <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      RT_Self = mean(key_resp_t1.rt[Category_t1 == "自我"], na.rm = TRUE),
+      RT_Other = mean(key_resp_t1.rt[Category_t1 == "他人"], na.rm = TRUE),
+      ACC_Self = mean(key_resp_t1.corr[Category_t1 == "自我"], na.rm = TRUE),
+      ACC_Other = mean(key_resp_t1.corr[Category_t1 == "他人"], na.rm = TRUE),
+      SPE_RT = RT_Other - RT_Self,  # 反应时差值（他人 - 自我）
+      SPE_ACC = ACC_Self - ACC_Other # 准确率差值（自我 - 他人）
+    )
+  
+  #计算分情感效价的自我优势效应
+  spe_by_valence <- data %>%
+    group_by(Subject, Category_t1) %>%
+    summarize(
+      RT = mean(key_resp_t1.rt, na.rm = TRUE),
+      ACC = mean(key_resp_t1.corr, na.rm = TRUE)
+    ) %>%
+    pivot_wider(names_from = Category_t1, values_from = c(RT, ACC)) %>%
+    mutate(
+      SPE_RT_Positive = RT_他人 - RT_自我,  # 积极条件下（他人 - 自我）
+      SPE_RT_Negative = RT_他人 - RT_自我,  # 消极条件下（他人 - 自我）
+      SPE_ACC_Positive = ACC_自我 - ACC_他人, # 积极条件下（自我 - 他人）
+      SPE_ACC_Negative = ACC_自我 - ACC_他人  # 消极条件下（自我 - 他人）
+    ) %>%
+    select(Subject, SPE_RT_Positive, SPE_RT_Negative, SPE_ACC_Positive, SPE_ACC_Negative)
+
+  # 合并整体和分情感效价的SPE
+  spe_combined <- left_join(spe_overall, spe_by_valence, by = "Subject")
+  
+  # 存储结果
+  spe_results[[file]] <- spe_combined
+}
+
+# 合并所有被试的数据
+final_spe_results <- bind_rows(spe_results)
+
+# 保存最终结果
+write_csv(final_spe_results, file.path(clean_data_folder, "../Compute_Result/SPE_Results.csv"))
+
+print("自我优势效应计算完成！结果已保存到 SPE_Results.csv")
+
+```
+
+# Compute IAT
+```{r}
+# 加载必要的库
+library(dplyr)
+library(readr)
+
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
+
+# 获取 Selected 文件夹下的所有 CSV 文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 定义错误率阈值
+error_threshold <- 0.20
+
+# 存储所有被试的结果
+results <- list()
+
+for (file in csv_files) {
+  # 读取 CSV 文件
+  data <- read_csv(file)
+
+  # 确保 Subject 为字符型
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+
+  # 反应时修正（限定在 300ms - 3000ms）
+  data <- data %>%
+    mutate(
+      key_resp_t1.rt = pmax(pmin(key_resp_t1.rt, 3000), 300),
+      key_resp_t2.rt = pmax(pmin(key_resp_t2.rt, 3000), 300)
+    )
+
+  # 计算每个被试的错误率
+  error_rates <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      error_rate_t1 = mean(1 - key_resp_t1.corr, na.rm = TRUE),  # Part 3 (t1)
+      error_rate_t2 = mean(1 - key_resp_t2.corr, na.rm = TRUE)   # Part 5 (t2)
+    )
+
+  # 过滤错误率高于 20% 的被试
+  valid_subjects <- error_rates %>%
+    filter(error_rate_t1 <= error_threshold, error_rate_t2 <= error_threshold) %>%
+    pull(Subject)
+
+  data <- data %>%
+    filter(Subject %in% valid_subjects)
+
+  # 进行对数转换 (logRT)
+  data <- data %>%
+    mutate(
+      logRT_t1 = log(key_resp_t1.rt),  # Part 3 (相容组)
+      logRT_t2 = log(key_resp_t2.rt)   # Part 5 (不相容组)
+    )
+
+  # 计算每个被试的平均反应时
+  mean_RT <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      mean_logRT_compatible = mean(logRT_t1, na.rm = TRUE),    # 相容组 (Part 3)
+      mean_logRT_incompatible = mean(logRT_t2, na.rm = TRUE)   # 不相容组 (Part 5)
+    )
+
+  # 计算 IAT 分数 (IAT_score = 不相容组RT - 相容组RT)
+  mean_RT <- mean_RT %>%
+    mutate(IAT_score = mean_logRT_incompatible - mean_logRT_compatible)
+
+  # 存储结果
+  results[[file]] <- mean_RT
+}
+
+# 合并所有被试的结果
+final_results <- bind_rows(results)
+
+# 输出结果
+write_csv(final_results, file.path(clean_data_folder, "../Compute_Result/IAT_scores.csv"))
+
+print("IAT 计算完成，结果已保存到 Clean_Data 文件夹")
+
+```
+
+```{r}
+# 加载必要的库
+library(dplyr)
+library(readr)
+
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
+
+# 获取 Selected 文件夹下的所有 CSV 文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 定义错误率阈值
+error_threshold <- 0.20
+
+# 存储所有被试的结果
+results <- list()
+
+for (file in csv_files) {
+  # 读取 CSV 文件
+  data <- read_csv(file)
+
+  # 确保 Subject 为字符型
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+
+  # 反应时修正（限定在 300ms - 3000ms）
+  data <- data %>%
+    mutate(
+      key_resp_t1.rt = pmax(pmin(key_resp_t1.rt * 1000, 3000), 300),  # 转换为毫秒
+      key_resp_t2.rt = pmax(pmin(key_resp_t2.rt * 1000, 3000), 300)   # 转换为毫秒
+    )
+
+  # 计算每个被试的错误率
+  error_rates <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      error_rate_t1 = mean(1 - key_resp_t1.corr, na.rm = TRUE),  # Part 3 (t1)
+      error_rate_t2 = mean(1 - key_resp_t2.corr, na.rm = TRUE)   # Part 5 (t2)
+    )
+
+  # 过滤错误率高于 20% 的被试
+  valid_subjects <- error_rates %>%
+    filter(error_rate_t1 <= error_threshold, error_rate_t2 <= error_threshold) %>%
+    pull(Subject)
+
+  data <- data %>%
+    filter(Subject %in% valid_subjects)
+
+  # 进行对数转换 (logRT)
+  data <- data %>%
+    mutate(
+      logRT_t1 = log(key_resp_t1.rt),  # Part 3 (相容组)
+      logRT_t2 = log(key_resp_t2.rt)   # Part 5 (不相容组)
+    )
+
+  # 计算每个被试的平均反应时
+  mean_RT <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      mean_logRT_compatible = mean(logRT_t1, na.rm = TRUE),    # 相容组 (Part 3)
+      mean_logRT_incompatible = mean(logRT_t2, na.rm = TRUE)   # 不相容组 (Part 5)
+    )
+
+  # 计算 IAT 分数 (IAT_score = 不相容组RT - 相容组RT)
+  mean_RT <- mean_RT %>%
+    mutate(IAT_score = mean_logRT_incompatible - mean_logRT_compatible)
+
+  # 存储结果
+  results[[file]] <- mean_RT
+}
+
+# 合并所有被试的结果
+final_results <- bind_rows(results)
+
+# 输出结果
+write_csv(final_results, file.path(clean_data_folder, "../Compute_Result/IAT_scores.csv"))
+
+print("IAT 计算完成，结果已保存到 Clean_Data 文件夹")
+
+```
+
+
+
+
