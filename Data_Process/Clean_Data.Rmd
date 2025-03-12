@@ -91,6 +91,92 @@ for (file in csv_files) {
 rm(clean_data_folder,csv_files,file,new_file_name,selected_folder)
 ```
 
+## 3.将刺激进行分类
+```{r show_col_types = FALSE}
+# 导入必要的库
+library(dplyr)
+library(readr)
+library(purrr)
+
+# 设置文件路径
+selected_folder <- "Selected"
+clean_data_folder <- "Clean_Data"
+
+# 确保Clean_Data文件夹存在
+if (!dir.exists(clean_data_folder)) {
+  dir.create(clean_data_folder)
+}
+
+# 获取Selected文件夹下的所有CSV文件
+csv_files <- list.files(selected_folder, pattern = "*.csv", full.names = TRUE)
+
+# 定义分类词汇
+self_words <- c("我", "我的", "我们", "自己", "俺")
+other_words <- c("他", "他们", "他的", "他人", "其他")
+positive_words <- c("优秀", "崇高", "聪明", "杰出", "乐观", "诚实", "正直", "勇敢", 
+                    "勤奋", "机智", "认真", "稳重", "无私", "公正", "朴实", "细腻", 
+                    "冷静", "热情", "活泼", "诚恳")
+negative_words <- c("卑鄙", "虚伪", "愚蠢", "刻薄", "悲观", "消极", "自卑", "傲慢", 
+                    "鲁莽", "冒失", "执拗", "散漫", "凶狠", "自私", "暴躁", "猖狂", 
+                    "野蛮", "固执", "轻率", "下贱")
+
+# 分类函数
+categorize_word <- function(word) {
+  if (is.na(word)) {
+    return(NA)  # 处理缺失值
+  } else if (word %in% self_words) {
+    return("自我")
+  } else if (word %in% other_words) {
+    return("他人")
+  } else if (word %in% positive_words) {
+    return("积极")
+  } else if (word %in% negative_words) {
+    return("消极")
+  } else {
+    return(NA)  # 未知类别
+  }
+}
+
+# 遍历每一个CSV文件进行处理
+for (file in csv_files) {
+  # 读取CSV文件
+  data <- read_csv(file)
+  
+  # 确保Subject列为字符型
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  # 添加分类变量
+  data <- data %>%
+    mutate(Category_t1 = sapply(Words_t1, categorize_word),
+           Category_t2 = sapply(Words_t2, categorize_word))
+  
+  # 生成输出文件名
+  output_file <- file.path(clean_data_folder, basename(file))
+  
+  # 保存处理后的CSV文件
+  write_csv(data, output_file)
+}
+
+print("批量处理完成，数据已保存到 Clean_Data 文件夹")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 3.计算数据的d'  ~~
 
 ```{r}
