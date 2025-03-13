@@ -1,0 +1,26 @@
+---
+title: "Merge_Data"
+author: "czx"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+# 载入必要的库
+library(dplyr)
+
+# 读取数据
+iat_data <- read.csv("Compute_Result/IAT_scores.csv", stringsAsFactors = FALSE)
+questionnaire_data <- read.csv("Compute_Result/问卷数据_最终版（反向计分）_v2.csv", stringsAsFactors = FALSE)
+
+# 对比并合并数据，保留共有的被试
+merged_data <- questionnaire_data %>%
+  inner_join(iat_data, by = c("Id" = "Subject"))
+
+# 保存合并后的数据
+write.csv(merged_data, "Compute_Result/Merged_data.csv", row.names = FALSE)
+
+# 输出前几行数据以检查合并是否成功
+head(merged_data)
+```
+
