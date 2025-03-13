@@ -6,6 +6,33 @@ output: html_document
 ---
 
 ```{r}
+# 载入必要的库
+library(lavaan)
+
+# 读取数据
+data <- read.csv("Compute_Result/Merged_data.csv", stringsAsFactors = FALSE)
+
+# 定义结构方程模型（SEM）
+sem_model <- ' 
+  # 设定潜变量
+  Communication_Anxiety =~ PRCA_Total + PRCA_grouo + PRCA_meeting + PRCA_twopeople + PRCA_public
+  Self_Perception =~ d_prime_goodme_badothers + d_prime_badme_goodothers
+  
+  # 设定回归关系
+  Communication_Anxiety ~ Self_Perception + IAS_Total + SS_Total
+'
+
+# 运行SEM分析
+fit <- sem(sem_model, data = data)
+
+# 输出结果摘要
+summary(fit, fit.measures = TRUE, standardized = TRUE)
+
+# 结果参考值范围说明：
+# CFI（比较拟合指数）：> 0.90（可接受），> 0.95（良好）
+# RMSEA（均方根误差）：< 0.08（可接受），< 0.05（良好）
+# SRMR（标准化残差均方根）：< 0.08（良好）
+# χ²检验：p > 0.05 表示模型拟合良好
 
 ```
 
