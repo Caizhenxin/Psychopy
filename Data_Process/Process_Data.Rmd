@@ -36,3 +36,30 @@ summary(fit, fit.measures = TRUE, standardized = TRUE)
 
 ```
 
+```{r}
+# 读取数据
+data <- read.csv("Compute_Result/Merged_data.csv")
+
+# 计算 33% 和 66% 分位数
+q33 <- quantile(data$IAT_score, 0.33, na.rm = TRUE)
+q66 <- quantile(data$IAT_score, 0.66, na.rm = TRUE)
+
+# 按照分位数分组
+data$Group <- cut(
+  data$IAT_score,
+  breaks = c(-Inf, q33, q66, Inf),
+  labels = c("Low", "Medium", "High"),
+  include.lowest = TRUE
+)
+
+# 查看前几行结果
+head(data)
+
+# 保存分组后的数据
+write.csv(data, "IAT_scores_grouped.csv", row.names = FALSE)
+
+# 输出各组数据量
+table(data$Group)
+
+```
+
