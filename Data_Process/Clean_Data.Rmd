@@ -930,6 +930,175 @@ print("自我优势效应计算完成！结果已保存到 SPE_Results.csv")
 
 ```
 
+# V2(整体的)
+```{r}
+# 加载必要的库
+library(dplyr)
+library(readr)
+library(tidyr)
+
+# Cohen's d 计算函数
+compute_cohens_d <- function(m1, m2, sd1, sd2) {
+  sd_pooled <- sqrt((sd1^2 + sd2^2) / 2)
+  d <- (m1 - m2) / sd_pooled
+  return(d)
+}
+
+# 读取已分类数据
+clean_data_folder <- "Clean_Data"
+csv_files <- list.files(clean_data_folder, pattern = "*.csv", full.names = TRUE)
+
+# 存储所有被试的计算结果
+spe_results <- list()
+
+# 遍历每个文件进行计算
+for (file in csv_files) {
+  data <- read_csv(file)
+  
+  # 确保 Subject 格式正确
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  # 计算 t1（好我-坏他）条件下的 SPE
+  spe_t1 <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      RT_Self_t1 = mean(key_resp_t1.rt[Category_t1 == "自我"], na.rm = TRUE),
+      RT_Other_t1 = mean(key_resp_t1.rt[Category_t1 == "他人"], na.rm = TRUE),
+      ACC_Self_t1 = mean(key_resp_t1.corr[Category_t1 == "自我"], na.rm = TRUE),
+      ACC_Other_t1 = mean(key_resp_t1.corr[Category_t1 == "他人"], na.rm = TRUE),
+      SPE_RT_t1 = RT_Other_t1 - RT_Self_t1,
+      SPE_ACC_t1 = ACC_Self_t1 - ACC_Other_t1
+    )
+  
+  # 计算 t2（坏我-好他）条件下的 SPE
+  spe_t2 <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      RT_Self_t2 = mean(key_resp_t2.rt[Category_t2 == "自我"], na.rm = TRUE),
+      RT_Other_t2 = mean(key_resp_t2.rt[Category_t2 == "他人"], na.rm = TRUE),
+      ACC_Self_t2 = mean(key_resp_t2.corr[Category_t2 == "自我"], na.rm = TRUE),
+      ACC_Other_t2 = mean(key_resp_t2.corr[Category_t2 == "他人"], na.rm = TRUE),
+      SPE_RT_t2 = RT_Other_t2 - RT_Self_t2,
+      SPE_ACC_t2 = ACC_Self_t2 - ACC_Other_t2
+    )
+  
+  # 合并 t1 和 t2 的 SPE 结果
+  spe_combined <- left_join(spe_t1, spe_t2, by = "Subject")
+  
+  # 存储结果
+  spe_results[[file]] <- spe_combined
+}
+
+# 合并所有被试的数据
+final_spe_results <- bind_rows(spe_results)
+
+# 计算 Cohen’s d
+cohens_d_results <- final_spe_results %>%
+  summarize(
+    # t1（好我-坏他） Cohen’s d
+    d_RT_t1 = compute_cohens_d(mean(RT_Other_t1, na.rm = TRUE), mean(RT_Self_t1, na.rm = TRUE),
+                               sd(RT_Other_t1, na.rm = TRUE), sd(RT_Self_t1, na.rm = TRUE)),
+    d_ACC_t1 = compute_cohens_d(mean(ACC_Self_t1, na.rm = TRUE), mean(ACC_Other_t1, na.rm = TRUE),
+                                sd(ACC_Self_t1, na.rm = TRUE), sd(ACC_Other_t1, na.rm = TRUE)),
+    
+    # t2（坏我-好他） Cohen’s d
+    d_RT_t2 = compute_cohens_d(mean(RT_Other_t2, na.rm = TRUE), mean(RT_Self_t2, na.rm = TRUE),
+                               sd(RT_Other_t2, na.rm = TRUE), sd(RT_Self_t2, na.rm = TRUE)),
+    d_ACC_t2 = compute_cohens_d(mean(ACC_Self_t2, na.rm = TRUE), mean(ACC_Other_t2, na.rm = TRUE),
+                                sd(ACC_Self_t2, na.rm = TRUE), sd(ACC_Other_t2, na.rm = TRUE))
+  )
+
+# 保存最终的 Cohen’s d 结果
+write_csv(cohens_d_results, file.path("Compute_Result", "Cohens_d_T1_T2_Results.csv"))
+
+print("Cohen's d 计算完成！结果已保存到 Cohens_d_T1_T2_Results.csv")
+```
+
+# V3(每个被试的)
+```{r}
+# 加载必要的库
+library(dplyr)
+library(readr)
+
+# Cohen's d 计算函数（每个被试）
+compute_cohens_d <- function(m1, m2, sd1, sd2) {
+  sd_pooled <- sqrt((sd1^2 + sd2^2) / 2)
+  d <- (m1 - m2) / sd_pooled
+  return(d)
+}
+
+# 读取已分类数据
+clean_data_folder <- "Clean_Data"
+csv_files <- list.files(clean_data_folder, pattern = "*.csv", full.names = TRUE)
+
+# 存储所有被试的计算结果
+spe_results <- list()
+
+# 遍历每个文件进行计算
+for (file in csv_files) {
+  data <- read_csv(file)
+  
+  # 确保 Subject 格式正确
+  data <- data %>%
+    mutate(Subject = as.character(Subject))
+  
+  # 计算 t1（好我-坏他）条件下的 SPE
+  spe_t1 <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      RT_Self_t1 = mean(key_resp_t1.rt[Category_t1 == "自我"], na.rm = TRUE),
+      RT_Other_t1 = mean(key_resp_t1.rt[Category_t1 == "他人"], na.rm = TRUE),
+      SD_Self_t1 = sd(key_resp_t1.rt[Category_t1 == "自我"], na.rm = TRUE),
+      SD_Other_t1 = sd(key_resp_t1.rt[Category_t1 == "他人"], na.rm = TRUE),
+      ACC_Self_t1 = mean(key_resp_t1.corr[Category_t1 == "自我"], na.rm = TRUE),
+      ACC_Other_t1 = mean(key_resp_t1.corr[Category_t1 == "他人"], na.rm = TRUE),
+      SD_ACC_Self_t1 = sd(key_resp_t1.corr[Category_t1 == "自我"], na.rm = TRUE),
+      SD_ACC_Other_t1 = sd(key_resp_t1.corr[Category_t1 == "他人"], na.rm = TRUE)
+    ) %>%
+    mutate(
+      d_RT_t1 = compute_cohens_d(RT_Other_t1, RT_Self_t1, SD_Other_t1, SD_Self_t1),
+      d_ACC_t1 = compute_cohens_d(ACC_Self_t1, ACC_Other_t1, SD_ACC_Self_t1, SD_ACC_Other_t1)
+    )
+  
+  # 计算 t2（坏我-好他）条件下的 SPE
+  spe_t2 <- data %>%
+    group_by(Subject) %>%
+    summarize(
+      RT_Self_t2 = mean(key_resp_t2.rt[Category_t2 == "自我"], na.rm = TRUE),
+      RT_Other_t2 = mean(key_resp_t2.rt[Category_t2 == "他人"], na.rm = TRUE),
+      SD_Self_t2 = sd(key_resp_t2.rt[Category_t2 == "自我"], na.rm = TRUE),
+      SD_Other_t2 = sd(key_resp_t2.rt[Category_t2 == "他人"], na.rm = TRUE),
+      ACC_Self_t2 = mean(key_resp_t2.corr[Category_t2 == "自我"], na.rm = TRUE),
+      ACC_Other_t2 = mean(key_resp_t2.corr[Category_t2 == "他人"], na.rm = TRUE),
+      SD_ACC_Self_t2 = sd(key_resp_t2.corr[Category_t2 == "自我"], na.rm = TRUE),
+      SD_ACC_Other_t2 = sd(key_resp_t2.corr[Category_t2 == "他人"], na.rm = TRUE)
+    ) %>%
+    mutate(
+      d_RT_t2 = compute_cohens_d(RT_Other_t2, RT_Self_t2, SD_Other_t2, SD_Self_t2),
+      d_ACC_t2 = compute_cohens_d(ACC_Self_t2, ACC_Other_t2, SD_ACC_Self_t2, SD_ACC_Other_t2)
+    )
+  
+  # 合并 t1 和 t2 的 Cohen’s d
+  spe_combined <- left_join(spe_t1, spe_t2, by = "Subject") %>%
+    select(Subject, d_RT_t1, d_ACC_t1, d_RT_t2, d_ACC_t2)
+  
+  # 存储结果
+  spe_results[[file]] <- spe_combined
+}
+
+# 合并所有被试的数据
+final_spe_results <- bind_rows(spe_results)
+
+# 保存每个被试的 Cohen’s d
+write_csv(final_spe_results, file.path("Compute_Result", "Cohens_d_per_subject.csv"))
+
+print("每个被试的 Cohen's d 计算完成！结果已保存到 Cohens_d_per_subject.csv")
+
+```
+
+
+
 # Compute IAT
 ```{r}
 # 加载必要的库
